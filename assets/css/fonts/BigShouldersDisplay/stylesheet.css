@@ -1,0 +1,96 @@
+@font-face {
+    font-family: 'Big Shoulders Display';
+    src: url('BigShouldersDisplay-ExtraBold.eot');
+    src: local('Big Shoulders Display ExtraBold'), local('BigShouldersDisplay-ExtraBold'),
+        url('BigShouldersDisplay-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('BigShouldersDisplay-ExtraBold.woff2') format('woff2'),
+        url('BigShouldersDisplay-ExtraBold.woff') format('woff'),
+        url('BigShouldersDisplay-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Big Shoulders Display';
+    src: url('BigShouldersDisplay-Light.eot');
+    src: local('Big Shoulders Display Light'), local('BigShouldersDisplay-Light'),
+        url('BigShouldersDisplay-Light.eot?#iefix') format('embedded-opentype'),
+        url('BigShouldersDisplay-Light.woff2') format('woff2'),
+        url('BigShouldersDisplay-Light.woff') format('woff'),
+        url('BigShouldersDisplay-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Big Shoulders Display';
+    src: url('BigShouldersDisplay-Black.eot');
+    src: local('Big Shoulders Display Black'), local('BigShouldersDisplay-Black'),
+        url('BigShouldersDisplay-Black.eot?#iefix') format('embedded-opentype'),
+        url('BigShouldersDisplay-Black.woff2') format('woff2'),
+        url('BigShouldersDisplay-Black.woff') format('woff'),
+        url('BigShouldersDisplay-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Big Shoulders Display';
+    src: url('BigShouldersDisplay-Thin.eot');
+    src: local('Big Shoulders Display Thin'), local('BigShouldersDisplay-Thin'),
+        url('BigShouldersDisplay-Thin.eot?#iefix') format('embedded-opentype'),
+        url('BigShouldersDisplay-Thin.woff2') format('woff2'),
+        url('BigShouldersDisplay-Thin.woff') format('woff'),
+        url('BigShouldersDisplay-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Big Shoulders Display';
+    src: url('BigShouldersDisplay-SemiBold.eot');
+    src: local('Big Shoulders Display SemiBold'), local('BigShouldersDisplay-SemiBold'),
+        url('BigShouldersDisplay-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('BigShouldersDisplay-SemiBold.woff2') format('woff2'),
+        url('BigShouldersDisplay-SemiBold.woff') format('woff'),
+        url('BigShouldersDisplay-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Big Shoulders Display';
+    src: url('BigShouldersDisplay-Regular.eot');
+    src: local('Big Shoulders Display Regular'), local('BigShouldersDisplay-Regular'),
+        url('BigShouldersDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+        url('BigShouldersDisplay-Regular.woff2') format('woff2'),
+        url('BigShouldersDisplay-Regular.woff') format('woff'),
+        url('BigShouldersDisplay-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Big Shoulders Display';
+    src: url('BigShouldersDisplay-Medium.eot');
+    src: local('Big Shoulders Display Medium'), local('BigShouldersDisplay-Medium'),
+        url('BigShouldersDisplay-Medium.eot?#iefix') format('embedded-opentype'),
+        url('BigShouldersDisplay-Medium.woff2') format('woff2'),
+        url('BigShouldersDisplay-Medium.woff') format('woff'),
+        url('BigShouldersDisplay-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Big Shoulders Display';
+    src: url('BigShouldersDisplay-Bold.eot');
+    src: local('Big Shoulders Display Bold'), local('BigShouldersDisplay-Bold'),
+        url('BigShouldersDisplay-Bold.eot?#iefix') format('embedded-opentype'),
+        url('BigShouldersDisplay-Bold.woff2') format('woff2'),
+        url('BigShouldersDisplay-Bold.woff') format('woff'),
+        url('BigShouldersDisplay-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+

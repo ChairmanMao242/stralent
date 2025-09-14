@@ -1,0 +1,193 @@
+@use "mixins";
+
+.header {
+  background-image: url(./../img/bg/bg-header.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  height: auto;
+  aspect-ratio: 1920 / 1165;
+  max-height: 100dvh;
+  margin: 0 auto;
+  min-width: 100%;
+
+  @media (max-width: 767px) {
+    aspect-ratio: auto;
+    background-size: cover;
+    height: 540px;
+  }
+
+  &__logo {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+
+    @media (max-width: 1599px) {
+      img {
+        width: 350px;
+      }
+    }
+
+    @media (max-width: 1199px) {
+      img {
+        width: 250px;
+      }
+    }
+
+    @media (max-width: 767px) {
+      left: 20px;
+      top: 70px;
+
+      img {
+        width: 200px;
+      }
+    }
+  }
+
+  &__menu {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    display: flex;
+    align-items: center;
+
+    @media (max-width: 767px) {
+      top: 20px;
+      left: 20px;
+    }
+  }
+
+  &__btn {
+    appearance: none;
+    -webkit-appearance: none;
+    background-color: #ff990e;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 50px;
+    padding: 20px 40px;
+
+    span {
+      margin-right: 15px;
+      margin-top: -0.1em;
+      font-size: 27px;
+      font-weight: 600;
+      color: white;
+      line-height: 1em;
+    }
+
+    @media (max-width: 1549px) {
+      padding: 15px 30px;
+      span {
+        font-size: 24px;
+      }
+      svg {
+        width: 20px;
+        height: 20px;
+      }
+    }
+
+    @media (max-width: 1199px) {
+      padding: 15px 30px;
+
+      span {
+        font-size: 20px;
+      }
+
+      svg {
+        width: 16px;
+        height: 16px;
+      }
+    }
+
+    @media (max-width: 991px) {
+      padding: 12px 20px;
+
+      span {
+        font-size: 20px;
+        margin-right: 10px;
+      }
+
+      svg {
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+
+  &__linkedin {
+    margin-right: 25px;
+
+    img {
+      display: block;
+    }
+
+    @media (max-width: 1549px) {
+      img {
+        width: 35px;
+        height: 35px;
+      }
+    }
+
+    @media (max-width: 991px) {
+      margin-right: 15px;
+    }
+  }
+
+  &__payoff {
+    position: absolute;
+    top: 260px;
+    left: 50%;
+    transform: translateX(-100%);
+
+    h1 {
+      color: white;
+      font-size: 100px;
+      font-weight: 400;
+      line-height: 1em;
+    }
+
+    @media (max-width: 1549px) {
+      h1 {
+        color: white;
+        font-size: 60px;
+      }
+    }
+
+    @media (max-width: 1199px) {
+      top: 180px;
+    }
+
+    @media (max-width: 991px) {
+      top: 150px;
+      left: 30px;
+      transform: none;
+      h1 {
+        font-size: 50px;
+      }
+    }
+
+    @media (max-width: 767px) {
+      top: 150px;
+      left: 20px;
+      transform: none;
+
+      h1 {
+        font-size: 50px;
+      }
+    }
+
+    @media (max-width: 599px) {
+      h1 {
+        max-width: 230px;
+      }
+    }
+  }
+
+  &__cta {
+    @include mixins.button;
+    & {
+      margin-top: 40px;
+    }
+  }
+}

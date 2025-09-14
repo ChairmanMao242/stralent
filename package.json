@@ -1,0 +1,11 @@
+{
+  "name": "stralent-html5-scss-project",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "sass assets/styles.scss assets/styles.css --no-source-map --style=expanded",
+    "watch": "sass --watch assets/styles.scss:assets/styles.css --no-source-map --style=expanded"
+  },
+  "devDependencies": {
+    "sass": "^1.69.0"
+  }
+}

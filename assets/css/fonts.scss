@@ -1,0 +1,37 @@
+
+@font-face {
+    font-family: 'Big Shoulders Display';
+    src: url('./fonts/BigShouldersDisplay/BigShouldersDisplay-Bold.eot');
+    src: local('Big Shoulders Display Bold'), local('BigShouldersDisplay-Bold'),
+        url('./fonts/BigShouldersDisplay/BigShouldersDisplay-Bold.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/BigShouldersDisplay/BigShouldersDisplay-Bold.woff2') format('woff2'),
+        url('./fonts/BigShouldersDisplay/BigShouldersDisplay-Bold.woff') format('woff'),
+        url('./fonts/BigShouldersDisplay/BigShouldersDisplay-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Accord Alternate';
+    src: url('./fonts/AccordAlternate/AccordAlternate-Regular.eot');
+    src: local('Accord Alternate Regular'), local('AccordAlternate-Regular'),
+        url('./fonts/AccordAlternate/AccordAlternate-Regular.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/AccordAlternate/AccordAlternate-Regular.woff2') format('woff2'),
+        url('./fonts/AccordAlternate/AccordAlternate-Regular.woff') format('woff'),
+        url('./fonts/AccordAlternate/AccordAlternate-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Accord Alternate';
+    src: url('./fonts/AccordAlternate/AccordAlternate-Bold.eot');
+    src: local('Accord Alternate Bold'), local('AccordAlternate-Bold'),
+        url('./fonts/AccordAlternate/AccordAlternate-Bold.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/AccordAlternate/AccordAlternate-Bold.woff2') format('woff2'),
+        url('./fonts/AccordAlternate/AccordAlternate-Bold.woff') format('woff'),
+        url('./fonts/AccordAlternate/AccordAlternate-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}

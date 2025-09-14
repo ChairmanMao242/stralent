@@ -1,0 +1,325 @@
+/* Layout */
+/* Typography */
+.contatti {
+  position: relative;
+  overflow: hidden;
+  margin-top: 145px;
+  padding-bottom: 160px;
+}
+@media (max-width: 1549px) {
+  .contatti {
+    margin-top: 100px;
+  }
+}
+@media (max-width: 767px) {
+  .contatti {
+    padding-bottom: 120px;
+  }
+}
+.contatti__container {
+  width: 1600px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+@media (max-width: 767px) {
+  .contatti__container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+.contatti__content, .contatti__image {
+  width: 50%;
+}
+@media (max-width: 767px) {
+  .contatti__content, .contatti__image {
+    width: 100%;
+  }
+}
+.contatti__image {
+  position: relative;
+}
+.contatti__image img {
+  display: block;
+  position: relative;
+  left: 0;
+  width: 50dvw;
+}
+@media (max-width: 767px) {
+  .contatti__image img {
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+}
+.contatti__title {
+  font-size: 90px;
+  letter-spacing: -0.04em;
+  color: #023f5c;
+  text-align: center;
+}
+@media (max-width: 1549px) {
+  .contatti__title {
+    font-size: 54px;
+  }
+}
+.contatti__content {
+  padding-right: 20px;
+}
+@media (max-width: 767px) {
+  .contatti__content {
+    padding-right: 0;
+    margin-bottom: 50px;
+  }
+}
+.contatti__content .contatti__title {
+  text-align: left;
+  position: relative;
+  padding-left: 30px;
+}
+.contatti__content .contatti__title:before {
+  content: "";
+  display: block;
+  background-color: #fe990f;
+  width: 20px;
+  height: 100%;
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+}
+.contatti__content .contatti__text {
+  margin-top: 40px;
+  text-align: left;
+  max-width: 600px;
+}
+.contatti__text {
+  font-size: 30px;
+  line-height: 1.25em;
+  text-align: center;
+  margin-top: 20px;
+}
+@media (max-width: 1549px) {
+  .contatti__text {
+    font-size: 26px;
+  }
+}
+@media (max-width: 767px) {
+  .contatti__text {
+    font-size: 22px;
+  }
+}
+.contatti__cta {
+  background-color: #ff990e;
+  border-radius: 64px;
+  display: inline-flex;
+  align-items: center;
+  padding: 30px 50px;
+  position: relative;
+  left: 25dvw;
+  transform: translate(-50%, -50%);
+}
+.contatti__cta a,
+.contatti__cta button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 40px;
+  text-decoration: none;
+  line-height: 1em;
+  position: relative;
+  margin-top: -0.1em;
+}
+.contatti__cta a span,
+.contatti__cta button span {
+  color: white;
+}
+.contatti__cta:before {
+  content: "";
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: white;
+  margin-right: 30px;
+}
+@media (max-width: 1549px) {
+  .contatti__cta {
+    padding: 25px 40px;
+  }
+  .contatti__cta a,
+.contatti__cta button {
+    font-size: 30px;
+  }
+  .contatti__cta:before {
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+  }
+}
+@media (max-width: 991px) {
+  .contatti__cta a,
+.contatti__cta button {
+    font-size: 24px;
+  }
+}
+@media (max-width: 767px) {
+  .contatti__cta:before {
+    margin-right: 10px;
+  }
+}
+.contatti__cta:after {
+  content: "";
+  display: block;
+  background-color: #fe990f;
+  width: 20px;
+  height: 190px;
+  border-radius: 10px;
+  position: absolute;
+  bottom: -180px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+@media (max-width: 1549px) {
+  .contatti__cta:after {
+    height: 150px;
+    bottom: -140px;
+  }
+}
+@media (max-width: 767px) {
+  .contatti__cta {
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+.contatti__newsletter {
+  margin: 130px auto 0;
+  max-width: 100%;
+}
+.contatti__button {
+  background-color: #023f5c;
+  border-radius: 64px;
+  display: inline-flex;
+  align-items: center;
+  padding: 30px 50px;
+}
+.contatti__button a,
+.contatti__button button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 40px;
+  text-decoration: none;
+  line-height: 1em;
+  position: relative;
+  margin-top: -0.1em;
+}
+.contatti__button a span,
+.contatti__button button span {
+  color: white;
+}
+.contatti__button:before {
+  content: "";
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: white;
+  margin-right: 30px;
+}
+@media (max-width: 1549px) {
+  .contatti__button {
+    padding: 25px 40px;
+  }
+  .contatti__button a,
+.contatti__button button {
+    font-size: 30px;
+  }
+  .contatti__button:before {
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+  }
+}
+@media (max-width: 991px) {
+  .contatti__button a,
+.contatti__button button {
+    font-size: 24px;
+  }
+}
+@media (max-width: 767px) {
+  .contatti__button:before {
+    margin-right: 10px;
+  }
+}
+.contatti__form {
+  position: relative;
+  background-color: #ebebeb;
+  max-width: 1200px;
+  width: 100%;
+  margin: 50px auto 0;
+  border-radius: 40px;
+  padding: 70px 80px 0;
+  text-align: center;
+}
+@media (max-width: 1549px) {
+  .contatti__form {
+    padding: 50px 60px 0;
+  }
+}
+@media (max-width: 767px) {
+  .contatti__form {
+    padding: 30px 30px;
+    width: 100%;
+    border-radius: 0;
+    width: 100dvw;
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+}
+.contatti__input {
+  background-color: white;
+  border: none;
+  font-size: 30px;
+  border-radius: 60px;
+  width: 100%;
+  max-width: 100%;
+  height: 100px;
+  line-height: 100px;
+  padding: 0 50px;
+}
+@media (max-width: 1549px) {
+  .contatti__input {
+    font-size: 24px;
+    height: 80px;
+    line-height: 80px;
+    padding: 0 40px;
+  }
+}
+.contatti__input:hover, .contatti__input:active, .contatti__input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #9eb9cd;
+}
+.contatti__button {
+  position: relative;
+  transform: translateY(50%);
+  cursor: pointer;
+}
+@media (max-width: 767px) {
+  .contatti__button {
+    transform: translateY(0);
+    margin-top: 20px;
+  }
+  .contatti__button span {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=contatti.css.map */

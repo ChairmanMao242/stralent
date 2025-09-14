@@ -1,0 +1,175 @@
+@use "mixins";
+
+.blog {
+    position: relative;
+    text-align: center;
+
+    &__container {
+        @include mixins.container(1600px);
+    }
+
+    &__title {
+        @include mixins.title();
+        margin: 70px auto;
+
+        span {
+            position: relative;
+
+            &:before {
+                content: "";
+                display: block;
+                background-color: #fe990f;
+                width: 20px;
+                height: 310px;
+                border-radius: 10px;
+                position: absolute;
+                right: -90px;
+                bottom: 20px;
+                @media (max-width: 1549px) {
+                    height: 200px;
+                    bottom: 10px;
+                    right: -70px;
+                }
+
+                @media (max-width: 767px) {
+                    display: none;
+                }
+            }
+
+            &:after {
+                content: "";
+                display: block;
+                background-color: #fe990f;
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                position: absolute;
+                right: -110px;
+                bottom: 15px;
+                
+                @media (max-width: 1549px) {
+                    width: 50px;
+                    height: 50px;
+                    bottom: 10px;
+                    right: -85px;
+                }
+
+                @media (max-width: 767px) {
+                    display: none;
+                }
+            }
+        }
+
+        @media (max-width: 1549px) {
+            margin: 50px auto;
+        }
+    }
+
+    &__carousel {
+        position: relative;
+        overflow: hidden;
+
+        img {
+            display: block;
+            max-width: 100%;
+        }
+
+        .swiper {
+            width: calc(100% - 40px);
+
+            @media (min-width: 768px) {
+                margin-left: -50%;
+                width: 200%;
+            }
+
+            @media (min-width: 992px) {
+                margin-left: -15%;
+                width: 130%;
+            }
+
+            &-wrapper {
+                align-items: center;
+            }
+        }
+    }
+
+    &__hover {
+        opacity: 0;
+        transition: all 0.5s ease-out;
+    }
+
+    &__slide {
+        position: relative;
+        overflow: hidden;
+        border-radius: 40px;
+        text-align: center;
+
+        img {
+            width: 100%;
+            display: block;
+        }
+
+        &:hover {
+            .blog__hover {
+                opacity: 1;
+            }
+        }
+    }
+
+    &__caption {
+        background-color: rgba(2, 63, 92, 0.65);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 50%;
+        padding: 50px;
+        @include mixins.h3(white, left);
+
+        @media (max-width: 1199px) {
+            padding: 30px;
+        }
+
+        @media (max-width: 767px) {
+            right: 0;
+            padding: 20px 30px;
+        }
+    }
+
+    &__cta {
+        @include mixins.button(#ff990e, white, white);
+        position: absolute;
+        bottom: 0;
+        right: 50px;
+        left: auto;
+        z-index: 9;
+        transform: translateY(50%);
+
+        @media (max-width: 1199px) {
+            right: 20px;
+        }
+
+        &--single {
+            background-color: #023f5c;
+            bottom: 60px;
+            left: 50%;
+            right: auto;
+            transform: translateX(-50%);
+
+            @media (max-width: 1199px) {
+                bottom: 30px;
+            }
+        }
+
+        &--category {
+            @media (max-width: 767px) {
+                position: relative;
+                transform: none;
+                margin: 30px auto 0;
+                left: 0;
+                right: 0;
+                max-width: 100%;
+            }
+        }
+    }
+}

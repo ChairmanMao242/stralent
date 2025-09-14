@@ -1,0 +1,193 @@
+@use "mixins";
+
+.contatti {
+    position: relative;
+    overflow: hidden;
+    margin-top: 145px;
+    padding-bottom: 160px;
+
+    @media (max-width: 1549px) {
+        margin-top: 100px;
+    }
+
+    @media (max-width: 767px) {
+        padding-bottom: 120px;
+    }
+
+    &__container {
+        @include mixins.container(1600px);
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    &__content,
+    &__image {
+        width: 50%;
+
+        @media (max-width: 767px) {
+            width: 100%;
+        }
+    }
+
+    &__image {
+        position: relative;
+
+        img {
+            display: block;
+            position: relative;
+            left: 0;
+            width: 50dvw;
+
+            @media (max-width: 767px) {
+                width: 100%;
+                border-radius: 20px;
+                overflow: hidden;
+            }
+        }
+    }
+
+    &__title {
+        @include mixins.title();
+    }
+
+    &__content {
+        padding-right: 20px;
+
+        @media (max-width: 767px) {
+            padding-right: 0;
+            margin-bottom: 50px;
+        }
+
+        .contatti__title {
+            text-align: left;
+            position: relative;
+            padding-left: 30px;
+
+            &:before {
+                content: "";
+                display: block;
+                background-color: #fe990f;
+                width: 20px;
+                height: 100%;
+                border-radius: 10px;
+                position: absolute;
+                left: 0;
+            }
+        }
+
+        .contatti__text {
+            margin-top: 40px;
+            text-align: left;
+            max-width: 600px;
+        }
+    }
+
+    &__text {
+        @include mixins.text();
+        margin-top: 20px;
+    }
+
+    &__cta {
+        @include mixins.button(#ff990e, white, white);
+        position: relative;
+        left: 25dvw;
+        transform: translate(-50%, -50%);
+
+        &:after {
+            content: "";
+            display: block;
+            background-color: #fe990f;
+            width: 20px;
+            height: 190px;
+            border-radius: 10px;
+            position: absolute;
+            bottom: -180px;
+            left: 50%;
+            transform: translateX(-50%);
+            @media (max-width: 1549px) {
+                height: 150px;
+                bottom: -140px;
+            }
+        }
+
+        @media (max-width: 767px) {
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    &__newsletter {
+        margin: 130px auto 0;
+        max-width: 100%;
+    }
+
+    &__button {
+        @include mixins.button(#023f5c, white, white);
+    }
+
+    &__form {
+        position: relative;
+        background-color: #ebebeb;
+        max-width: 1200px;
+        width: 100%;
+        margin: 50px auto 0;
+        border-radius: 40px;
+        padding: 70px 80px 0;
+        text-align: center;
+
+        @media (max-width: 1549px) {
+            padding: 50px 60px 0;
+        }
+
+        @media (max-width: 767px) {
+            padding: 30px 30px;
+            width: 100%;
+            border-radius: 0;
+            width: 100dvw;
+            margin-left: -20px;
+            margin-right: -20px;
+        }
+    }
+
+    &__input {
+        background-color: white;
+        border: none;
+        font-size: 30px;
+        border-radius: 60px;
+        width: 100%;
+        max-width: 100%;
+        height: 100px;
+        line-height: 100px;
+        padding: 0 50px;
+
+        @media (max-width: 1549px) {
+            font-size: 24px;
+            height: 80px;
+            line-height: 80px;
+            padding: 0 40px;
+        }
+
+        &:hover,
+        &:active,
+        &:focus {
+            outline: none;
+            box-shadow: 0 0 0 2px #9eb9cd;
+        }
+    }
+
+    &__button {
+        position: relative;
+        transform: translateY(50%);
+        cursor: pointer;
+
+        @media (max-width: 767px) {
+            transform: translateY(0);
+            margin-top: 20px;
+
+            span {
+                display: none;
+            }
+        }
+    }
+}

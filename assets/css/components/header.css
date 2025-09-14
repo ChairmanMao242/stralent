@@ -1,0 +1,240 @@
+/* Layout */
+/* Typography */
+.header {
+  background-image: url(./../img/bg/bg-header.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  height: auto;
+  aspect-ratio: 1920/1165;
+  max-height: 100dvh;
+  margin: 0 auto;
+  min-width: 100%;
+}
+@media (max-width: 767px) {
+  .header {
+    aspect-ratio: auto;
+    background-size: cover;
+    height: 540px;
+  }
+}
+.header__logo {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+@media (max-width: 1599px) {
+  .header__logo img {
+    width: 350px;
+  }
+}
+@media (max-width: 1199px) {
+  .header__logo img {
+    width: 250px;
+  }
+}
+@media (max-width: 767px) {
+  .header__logo {
+    left: 20px;
+    top: 70px;
+  }
+  .header__logo img {
+    width: 200px;
+  }
+}
+.header__menu {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 767px) {
+  .header__menu {
+    top: 20px;
+    left: 20px;
+  }
+}
+.header__btn {
+  appearance: none;
+  -webkit-appearance: none;
+  background-color: #ff990e;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 50px;
+  padding: 20px 40px;
+}
+.header__btn span {
+  margin-right: 15px;
+  margin-top: -0.1em;
+  font-size: 27px;
+  font-weight: 600;
+  color: white;
+  line-height: 1em;
+}
+@media (max-width: 1549px) {
+  .header__btn {
+    padding: 15px 30px;
+  }
+  .header__btn span {
+    font-size: 24px;
+  }
+  .header__btn svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+@media (max-width: 1199px) {
+  .header__btn {
+    padding: 15px 30px;
+  }
+  .header__btn span {
+    font-size: 20px;
+  }
+  .header__btn svg {
+    width: 16px;
+    height: 16px;
+  }
+}
+@media (max-width: 991px) {
+  .header__btn {
+    padding: 12px 20px;
+  }
+  .header__btn span {
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  .header__btn svg {
+    width: 16px;
+    height: 16px;
+  }
+}
+.header__linkedin {
+  margin-right: 25px;
+}
+.header__linkedin img {
+  display: block;
+}
+@media (max-width: 1549px) {
+  .header__linkedin img {
+    width: 35px;
+    height: 35px;
+  }
+}
+@media (max-width: 991px) {
+  .header__linkedin {
+    margin-right: 15px;
+  }
+}
+.header__payoff {
+  position: absolute;
+  top: 260px;
+  left: 50%;
+  transform: translateX(-100%);
+}
+.header__payoff h1 {
+  color: white;
+  font-size: 100px;
+  font-weight: 400;
+  line-height: 1em;
+}
+@media (max-width: 1549px) {
+  .header__payoff h1 {
+    color: white;
+    font-size: 60px;
+  }
+}
+@media (max-width: 1199px) {
+  .header__payoff {
+    top: 180px;
+  }
+}
+@media (max-width: 991px) {
+  .header__payoff {
+    top: 150px;
+    left: 30px;
+    transform: none;
+  }
+  .header__payoff h1 {
+    font-size: 50px;
+  }
+}
+@media (max-width: 767px) {
+  .header__payoff {
+    top: 150px;
+    left: 20px;
+    transform: none;
+  }
+  .header__payoff h1 {
+    font-size: 50px;
+  }
+}
+@media (max-width: 599px) {
+  .header__payoff h1 {
+    max-width: 230px;
+  }
+}
+.header__cta {
+  background-color: #023f5c;
+  border-radius: 64px;
+  display: inline-flex;
+  align-items: center;
+  padding: 30px 50px;
+}
+.header__cta a,
+.header__cta button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 40px;
+  text-decoration: none;
+  line-height: 1em;
+  position: relative;
+  margin-top: -0.1em;
+}
+.header__cta a span,
+.header__cta button span {
+  color: white;
+}
+.header__cta:before {
+  content: "";
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: white;
+  margin-right: 30px;
+}
+@media (max-width: 1549px) {
+  .header__cta {
+    padding: 25px 40px;
+  }
+  .header__cta a,
+.header__cta button {
+    font-size: 30px;
+  }
+  .header__cta:before {
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+  }
+}
+@media (max-width: 991px) {
+  .header__cta a,
+.header__cta button {
+    font-size: 24px;
+  }
+}
+@media (max-width: 767px) {
+  .header__cta:before {
+    margin-right: 10px;
+  }
+}
+.header__cta {
+  margin-top: 40px;
+}
+
+/*# sourceMappingURL=header.css.map */
