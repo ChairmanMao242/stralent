@@ -11,6 +11,9 @@
   margin: 0 auto;
   min-width: 100%;
 }
+.home .header {
+  background-image: url(./../img/bg/bg-header--home.webp);
+}
 @media (max-width: 767px) {
   .header {
     aspect-ratio: auto;
@@ -128,16 +131,38 @@
   }
 }
 .header__payoff {
-  position: absolute;
+  width: 1600px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+@media (max-width: 767px) {
+  .header__payoff {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+.header__payoff {
+  position: relative;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.home .header__payoff {
   top: 260px;
-  left: 50%;
-  transform: translateX(-100%);
+  transform: none;
 }
 .header__payoff h1 {
   color: white;
   font-size: 100px;
   font-weight: 400;
   line-height: 1em;
+  letter-spacing: -0.025em;
+  text-align: center;
+}
+.home .header__payoff h1 {
+  text-align: left;
 }
 @media (max-width: 1549px) {
   .header__payoff h1 {
@@ -146,32 +171,54 @@
   }
 }
 @media (max-width: 1199px) {
-  .header__payoff {
+  .home .header__payoff {
     top: 180px;
   }
 }
 @media (max-width: 991px) {
   .header__payoff {
+    padding-top: 80px;
+  }
+  .home .header__payoff {
     top: 150px;
-    left: 30px;
-    transform: none;
+    padding-top: 0;
   }
   .header__payoff h1 {
     font-size: 50px;
+  }
+  .header__payoff h1 br {
+    display: none;
   }
 }
 @media (max-width: 767px) {
-  .header__payoff {
-    top: 150px;
+  .header__payoff h1 {
+    font-size: 42px;
+  }
+}
+.home .header__payoff {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-100%);
+  width: auto;
+  max-width: none;
+  padding: 0;
+  text-align: left;
+}
+@media (max-width: 991px) {
+  .home .header__payoff {
+    left: 30px;
+    transform: none;
+    margin-top: auto;
+  }
+}
+@media (max-width: 767px) {
+  .home .header__payoff {
     left: 20px;
     transform: none;
   }
-  .header__payoff h1 {
-    font-size: 50px;
-  }
 }
 @media (max-width: 599px) {
-  .header__payoff h1 {
+  .home .header__payoff h1 {
     max-width: 230px;
   }
 }
@@ -183,7 +230,8 @@
   padding: 30px 50px;
 }
 .header__cta a,
-.header__cta button {
+.header__cta button,
+.header__cta span {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -197,7 +245,8 @@
   margin-top: -0.1em;
 }
 .header__cta a span,
-.header__cta button span {
+.header__cta button span,
+.header__cta span span {
   color: white;
 }
 .header__cta:before {
@@ -213,7 +262,8 @@
     padding: 25px 40px;
   }
   .header__cta a,
-.header__cta button {
+.header__cta button,
+.header__cta span {
     font-size: 30px;
   }
   .header__cta:before {
@@ -224,7 +274,8 @@
 }
 @media (max-width: 991px) {
   .header__cta a,
-.header__cta button {
+.header__cta button,
+.header__cta span {
     font-size: 24px;
   }
 }

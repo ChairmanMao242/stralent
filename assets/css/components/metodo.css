@@ -127,7 +127,8 @@
 }
 .metodo__desc {
   font-size: 30px;
-  line-height: 1.25em;
+  line-height: 1.3em;
+  color: #023f5c;
   text-align: center;
 }
 @media (max-width: 1549px) {
@@ -192,7 +193,8 @@
   transform: translateY(-50%);
 }
 .metodo__tag a,
-.metodo__tag button {
+.metodo__tag button,
+.metodo__tag span {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -206,7 +208,8 @@
   margin-top: -0.1em;
 }
 .metodo__tag a span,
-.metodo__tag button span {
+.metodo__tag button span,
+.metodo__tag span span {
   color: #6f8fa7;
 }
 .metodo__tag:before {
@@ -222,7 +225,8 @@
     padding: 25px 40px;
   }
   .metodo__tag a,
-.metodo__tag button {
+.metodo__tag button,
+.metodo__tag span {
     font-size: 30px;
   }
   .metodo__tag:before {
@@ -233,7 +237,8 @@
 }
 @media (max-width: 991px) {
   .metodo__tag a,
-.metodo__tag button {
+.metodo__tag button,
+.metodo__tag span {
     font-size: 24px;
   }
 }
@@ -298,7 +303,8 @@
   right: -50px;
 }
 .metodo__cta a,
-.metodo__cta button {
+.metodo__cta button,
+.metodo__cta span {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -312,7 +318,8 @@
   margin-top: -0.1em;
 }
 .metodo__cta a span,
-.metodo__cta button span {
+.metodo__cta button span,
+.metodo__cta span span {
   color: #023f5c;
 }
 .metodo__cta:before {
@@ -328,7 +335,8 @@
     padding: 25px 40px;
   }
   .metodo__cta a,
-.metodo__cta button {
+.metodo__cta button,
+.metodo__cta span {
     font-size: 30px;
   }
   .metodo__cta:before {
@@ -339,7 +347,8 @@
 }
 @media (max-width: 991px) {
   .metodo__cta a,
-.metodo__cta button {
+.metodo__cta button,
+.metodo__cta span {
     font-size: 24px;
   }
 }

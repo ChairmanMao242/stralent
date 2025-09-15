@@ -86,7 +86,8 @@
   padding: 30px 50px;
 
   a,
-  button {
+  button,
+  span {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -117,7 +118,8 @@
     padding: 25px 40px;
 
     a,
-    button {
+    button,
+    span {
       font-size: 30px;
     }
 
@@ -130,7 +132,8 @@
 
   @media (max-width: 991px) {
     a,
-    button {
+    button,
+    span {
       font-size: 24px;
     }
   }
@@ -170,6 +173,7 @@
   letter-spacing: -0.05em;
   color: $color;
   text-align: $text-align;
+  line-height: 1.3em;
 
   @media (max-width: 1549px) {
     font-size: 32px;
@@ -178,7 +182,8 @@
 
 @mixin text($color: #023f5c, $text-align: center) {
   font-size: 30px;
-  line-height: 1.25em;
+  line-height: 1.3em;
+  color: $color;
   text-align: $text-align;
 
   @media (max-width: 1549px) {
@@ -187,5 +192,35 @@
 
   @media (max-width: 767px) {
     font-size: 22px;
+  }
+}
+
+@mixin list($color: #fe990f) {
+  li {
+    position: relative;
+    margin-bottom: 25px;
+    padding-left: 60px;
+
+    &:before {
+      content: "";
+      display: block;
+      border-radius: 50%;
+      background-color: $color;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+      width: 40px;
+      height: 40px;
+    }
+
+    @media (max-width: 1549px) {
+      padding-left: 40px;
+
+      &:before {
+        width: 25px;
+        height: 25px;
+      }
+    }
   }
 }

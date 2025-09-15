@@ -98,7 +98,8 @@
 }
 .contatti__text {
   font-size: 30px;
-  line-height: 1.25em;
+  line-height: 1.3em;
+  color: #023f5c;
   text-align: center;
   margin-top: 20px;
 }
@@ -123,7 +124,8 @@
   transform: translate(-50%, -50%);
 }
 .contatti__cta a,
-.contatti__cta button {
+.contatti__cta button,
+.contatti__cta span {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -137,7 +139,8 @@
   margin-top: -0.1em;
 }
 .contatti__cta a span,
-.contatti__cta button span {
+.contatti__cta button span,
+.contatti__cta span span {
   color: white;
 }
 .contatti__cta:before {
@@ -153,7 +156,8 @@
     padding: 25px 40px;
   }
   .contatti__cta a,
-.contatti__cta button {
+.contatti__cta button,
+.contatti__cta span {
     font-size: 30px;
   }
   .contatti__cta:before {
@@ -164,7 +168,8 @@
 }
 @media (max-width: 991px) {
   .contatti__cta a,
-.contatti__cta button {
+.contatti__cta button,
+.contatti__cta span {
     font-size: 24px;
   }
 }
@@ -209,7 +214,8 @@
   padding: 30px 50px;
 }
 .contatti__button a,
-.contatti__button button {
+.contatti__button button,
+.contatti__button span {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -223,7 +229,8 @@
   margin-top: -0.1em;
 }
 .contatti__button a span,
-.contatti__button button span {
+.contatti__button button span,
+.contatti__button span span {
   color: white;
 }
 .contatti__button:before {
@@ -239,7 +246,8 @@
     padding: 25px 40px;
   }
   .contatti__button a,
-.contatti__button button {
+.contatti__button button,
+.contatti__button span {
     font-size: 30px;
   }
   .contatti__button:before {
@@ -250,7 +258,8 @@
 }
 @media (max-width: 991px) {
   .contatti__button a,
-.contatti__button button {
+.contatti__button button,
+.contatti__button span {
     font-size: 24px;
   }
 }

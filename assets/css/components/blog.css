@@ -139,6 +139,7 @@
   letter-spacing: -0.05em;
   color: white;
   text-align: left;
+  line-height: 1.3em;
 }
 @media (max-width: 1549px) {
   .blog__caption {
@@ -170,7 +171,8 @@
   transform: translateY(50%);
 }
 .blog__cta a,
-.blog__cta button {
+.blog__cta button,
+.blog__cta span {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -184,7 +186,8 @@
   margin-top: -0.1em;
 }
 .blog__cta a span,
-.blog__cta button span {
+.blog__cta button span,
+.blog__cta span span {
   color: white;
 }
 .blog__cta:before {
@@ -200,7 +203,8 @@
     padding: 25px 40px;
   }
   .blog__cta a,
-.blog__cta button {
+.blog__cta button,
+.blog__cta span {
     font-size: 30px;
   }
   .blog__cta:before {
@@ -211,7 +215,8 @@
 }
 @media (max-width: 991px) {
   .blog__cta a,
-.blog__cta button {
+.blog__cta button,
+.blog__cta span {
     font-size: 24px;
   }
 }
