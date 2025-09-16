@@ -180,6 +180,17 @@
   }
 }
 
+@mixin h4($color: #023f5c, $text-align: center) {
+  font-size: 46px;
+  letter-spacing: -0.05em;
+  color: $color;
+  text-align: $text-align;
+  line-height: 1.3em;
+
+  @media (max-width: 1549px) {
+    font-size: 28px;
+  }
+}
 @mixin text($color: #023f5c, $text-align: center) {
   font-size: 30px;
   line-height: 1.3em;
@@ -195,6 +206,20 @@
   }
 }
 
+@mixin small-text($color: #023f5c, $text-align: center) {
+  font-size: 24px;
+  line-height: 1.3em;
+  color: $color;
+  text-align: $text-align;
+
+  @media (max-width: 1549px) {
+    font-size: 20px;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 18px;
+  }
+}
 @mixin list($color: #fe990f) {
   li {
     position: relative;

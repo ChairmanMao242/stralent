@@ -153,6 +153,9 @@
   top: 260px;
   transform: none;
 }
+.blog .header__payoff {
+  width: 1340px;
+}
 .header__payoff h1 {
   color: white;
   font-size: 100px;

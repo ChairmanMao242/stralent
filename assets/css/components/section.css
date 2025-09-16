@@ -100,6 +100,9 @@
   border-radius: 10px;
   margin-bottom: 10px;
 }
+.blog .section__title:before {
+  display: none;
+}
 .section__subtitle {
   font-size: 60px;
   letter-spacing: -0.05em;
@@ -112,6 +115,36 @@
   .section__subtitle {
     font-size: 40px;
   }
+}
+.section__date {
+  font-size: 30px;
+  line-height: 1.3em;
+  color: white;
+  text-align: left;
+}
+@media (max-width: 1549px) {
+  .section__date {
+    font-size: 26px;
+  }
+}
+@media (max-width: 767px) {
+  .section__date {
+    font-size: 22px;
+  }
+}
+.section__date strong {
+  color: white;
+  font-weight: 700 !important;
+}
+.section__date:before {
+  content: "";
+  display: block;
+  margin: 0;
+  background-color: #fe990f;
+  width: 20px;
+  height: 200px;
+  border-radius: 10px;
+  margin-bottom: 10px;
 }
 .section__text, .section__list {
   margin-bottom: 40px;

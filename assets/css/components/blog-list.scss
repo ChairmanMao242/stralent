@@ -1,0 +1,82 @@
+@use "mixins";
+
+.blog-list {
+    position: relative;
+    text-align: center;
+
+    &__container {
+        @include mixins.container(1600px);
+    }
+
+    &__grid {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        margin-top: 70px;
+        gap: 40px;
+
+        @media (max-width: 1549px) {
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        @media (max-width: 991px) {
+            gap: 20px;
+        }
+    }
+
+    &__item {
+        text-align: left;
+        $gap-fix: 40 * 2 / 3;
+        flex: 0 0 calc(33.3333% - #{$gap-fix}px);
+        max-width: calc(33.3333% - #{$gap-fix}px);
+
+        @media (max-width: 1549px) {
+            $gap-fix: 30 * 2 / 3;
+            flex: 0 0 calc(33.3333% - #{$gap-fix}px);
+            max-width: calc(33.3333% - #{$gap-fix}px);
+        }
+
+        @media (max-width: 991px) {
+            flex: 0 0 calc(50% - 20px);
+            max-width: calc(50% - 20px);
+        }
+
+        @media (max-width: 767px) {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+    }
+
+    &__image {
+        border-radius: 20px;
+        overflow: hidden;
+        margin-bottom: 30px;
+
+        img {
+            display: block;
+            width: 100%;
+        }
+    }
+
+    &__title {
+        @include mixins.h4();
+        text-align: left;
+        margin-bottom: 20px;
+    }
+
+    &__excerpt,
+    &__date {
+        @include mixins.text();
+        text-align: left;
+    }
+
+    &__excerpt {
+        margin-bottom: 30px;
+    }
+
+    &__link {
+        @include mixins.button(#023f5c, white, white);
+    }
+}

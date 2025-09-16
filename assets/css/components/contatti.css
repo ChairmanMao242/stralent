@@ -304,6 +304,19 @@
   line-height: 100px;
   padding: 0 50px;
 }
+.blog .contatti__input {
+  border-radius: 40px;
+}
+.contatti__input--textarea {
+  height: 300px;
+  line-height: normal;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  resize: vertical;
+  min-height: 150px;
+  max-height: 400px;
+  margin-top: 30px;
+}
 @media (max-width: 1549px) {
   .contatti__input {
     font-size: 24px;
@@ -312,9 +325,39 @@
     padding: 0 40px;
   }
 }
+.contatti__input--checkbox {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  top: 3px;
+}
 .contatti__input:hover, .contatti__input:active, .contatti__input:focus {
   outline: none;
   box-shadow: 0 0 0 2px #9eb9cd;
+}
+.contatti label {
+  font-size: 24px;
+  line-height: 1.3em;
+  color: #023f5c;
+  text-align: center;
+}
+@media (max-width: 1549px) {
+  .contatti label {
+    font-size: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .contatti label {
+    font-size: 18px;
+  }
+}
+.contatti label {
+  display: block;
+  margin-top: 40px;
+}
+.contatti label--checkbox {
+  display: flex;
+  align-items: center;
 }
 .contatti__button {
   position: relative;
