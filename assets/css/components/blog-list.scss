@@ -16,7 +16,7 @@
         margin-top: 70px;
         gap: 40px;
 
-        @media (max-width: 1549px) {
+        @media (max-width: 1799px) {
             gap: 30px;
             margin-top: 50px;
         }
@@ -32,7 +32,7 @@
         flex: 0 0 calc(33.3333% - #{$gap-fix}px);
         max-width: calc(33.3333% - #{$gap-fix}px);
 
-        @media (max-width: 1549px) {
+        @media (max-width: 1799px) {
             $gap-fix: 30 * 2 / 3;
             flex: 0 0 calc(33.3333% - #{$gap-fix}px);
             max-width: calc(33.3333% - #{$gap-fix}px);

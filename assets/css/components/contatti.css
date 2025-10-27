@@ -6,7 +6,7 @@
   margin-top: 145px;
   padding-bottom: 160px;
 }
-@media (max-width: 1549px) {
+@media (max-width: 1799px) {
   .contatti {
     margin-top: 100px;
   }
@@ -62,7 +62,7 @@
   color: #023f5c;
   text-align: center;
 }
-@media (max-width: 1549px) {
+@media (max-width: 1799px) {
   .contatti__title {
     font-size: 54px;
   }
@@ -103,7 +103,7 @@
   text-align: center;
   margin-top: 20px;
 }
-@media (max-width: 1549px) {
+@media (max-width: 1799px) {
   .contatti__text {
     font-size: 26px;
   }
@@ -151,13 +151,13 @@
   background-color: white;
   margin-right: 30px;
 }
-@media (max-width: 1549px) {
+@media (max-width: 1799px) {
   .contatti__cta {
     padding: 25px 40px;
   }
   .contatti__cta a,
-.contatti__cta button,
-.contatti__cta span {
+  .contatti__cta button,
+  .contatti__cta span {
     font-size: 30px;
   }
   .contatti__cta:before {
@@ -168,8 +168,8 @@
 }
 @media (max-width: 991px) {
   .contatti__cta a,
-.contatti__cta button,
-.contatti__cta span {
+  .contatti__cta button,
+  .contatti__cta span {
     font-size: 24px;
   }
 }
@@ -190,7 +190,7 @@
   left: 50%;
   transform: translateX(-50%);
 }
-@media (max-width: 1549px) {
+@media (max-width: 1799px) {
   .contatti__cta:after {
     height: 150px;
     bottom: -140px;
@@ -241,13 +241,13 @@
   background-color: white;
   margin-right: 30px;
 }
-@media (max-width: 1549px) {
+@media (max-width: 1799px) {
   .contatti__button {
     padding: 25px 40px;
   }
   .contatti__button a,
-.contatti__button button,
-.contatti__button span {
+  .contatti__button button,
+  .contatti__button span {
     font-size: 30px;
   }
   .contatti__button:before {
@@ -258,8 +258,8 @@
 }
 @media (max-width: 991px) {
   .contatti__button a,
-.contatti__button button,
-.contatti__button span {
+  .contatti__button button,
+  .contatti__button span {
     font-size: 24px;
   }
 }
@@ -278,7 +278,7 @@
   padding: 70px 80px 0;
   text-align: center;
 }
-@media (max-width: 1549px) {
+@media (max-width: 1799px) {
   .contatti__form {
     padding: 50px 60px 0;
   }
@@ -317,7 +317,7 @@
   max-height: 400px;
   margin-top: 30px;
 }
-@media (max-width: 1549px) {
+@media (max-width: 1799px) {
   .contatti__input {
     font-size: 24px;
     height: 80px;
@@ -341,7 +341,7 @@
   color: #023f5c;
   text-align: center;
 }
-@media (max-width: 1549px) {
+@media (max-width: 1799px) {
   .contatti label {
     font-size: 20px;
   }
@@ -373,5 +373,3 @@
     display: none;
   }
 }
-
-/*# sourceMappingURL=contatti.css.map */

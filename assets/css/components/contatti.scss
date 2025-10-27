@@ -6,7 +6,7 @@
     margin-top: 145px;
     padding-bottom: 160px;
 
-    @media (max-width: 1549px) {
+    @media (max-width: 1799px) {
         margin-top: 100px;
     }
 
@@ -105,7 +105,7 @@
             bottom: -180px;
             left: 50%;
             transform: translateX(-50%);
-            @media (max-width: 1549px) {
+            @media (max-width: 1799px) {
                 height: 150px;
                 bottom: -140px;
             }
@@ -136,7 +136,7 @@
         padding: 70px 80px 0;
         text-align: center;
 
-        @media (max-width: 1549px) {
+        @media (max-width: 1799px) {
             padding: 50px 60px 0;
         }
 
@@ -176,7 +176,7 @@
             margin-top: 30px;
         }
 
-        @media (max-width: 1549px) {
+        @media (max-width: 1799px) {
             font-size: 24px;
             height: 80px;
             line-height: 80px;

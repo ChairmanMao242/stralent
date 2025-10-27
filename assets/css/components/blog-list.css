@@ -25,7 +25,7 @@
   margin-top: 70px;
   gap: 40px;
 }
-@media (max-width: 1549px) {
+@media (max-width: 1799px) {
   .blog-list__grid {
     gap: 30px;
     margin-top: 50px;
@@ -41,7 +41,7 @@
   flex: 0 0 calc(33.3333% - 26.6666666667px);
   max-width: calc(33.3333% - 26.6666666667px);
 }
-@media (max-width: 1549px) {
+@media (max-width: 1799px) {
   .blog-list__item {
     flex: 0 0 calc(33.3333% - 20px);
     max-width: calc(33.3333% - 20px);
@@ -77,7 +77,7 @@
   text-align: left;
   margin-bottom: 20px;
 }
-@media (max-width: 1549px) {
+@media (max-width: 1799px) {
   .blog-list__title {
     font-size: 28px;
   }
@@ -89,7 +89,7 @@
   text-align: center;
   text-align: left;
 }
-@media (max-width: 1549px) {
+@media (max-width: 1799px) {
   .blog-list__excerpt, .blog-list__date {
     font-size: 26px;
   }
@@ -137,13 +137,13 @@
   background-color: white;
   margin-right: 30px;
 }
-@media (max-width: 1549px) {
+@media (max-width: 1799px) {
   .blog-list__link {
     padding: 25px 40px;
   }
   .blog-list__link a,
-.blog-list__link button,
-.blog-list__link span {
+  .blog-list__link button,
+  .blog-list__link span {
     font-size: 30px;
   }
   .blog-list__link:before {
@@ -154,8 +154,8 @@
 }
 @media (max-width: 991px) {
   .blog-list__link a,
-.blog-list__link button,
-.blog-list__link span {
+  .blog-list__link button,
+  .blog-list__link span {
     font-size: 24px;
   }
 }
@@ -164,5 +164,3 @@
     margin-right: 10px;
   }
 }
-
-/*# sourceMappingURL=blog-list.css.map */

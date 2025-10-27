@@ -25,7 +25,7 @@
                 position: absolute;
                 right: -90px;
                 bottom: 20px;
-                @media (max-width: 1549px) {
+                @media (max-width: 1799px) {
                     height: 200px;
                     bottom: 10px;
                     right: -70px;
@@ -47,7 +47,7 @@
                 right: -110px;
                 bottom: 15px;
                 
-                @media (max-width: 1549px) {
+                @media (max-width: 1799px) {
                     width: 50px;
                     height: 50px;
                     bottom: 10px;
@@ -60,7 +60,7 @@
             }
         }
 
-        @media (max-width: 1549px) {
+        @media (max-width: 1799px) {
             margin: 50px auto;
         }
     }

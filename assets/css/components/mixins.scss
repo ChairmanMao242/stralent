@@ -57,7 +57,7 @@
   $col-gap: math.div($gap, $cols) * ($cols - 1);
   width: calc((100% / #{$cols}) - #{$col-gap}px);
 
-  @media (max-width: 1549px) {
+  @media (max-width: 1799px) {
     $mobile-gap: math.max(math.div($gap, 2), 30);
     $col-gap: math.div($mobile-gap, $cols) * ($cols - 1);
     width: calc((100% / #{$cols}) - #{$col-gap}px);
@@ -114,7 +114,7 @@
     margin-right: 30px;
   }
 
-  @media (max-width: 1549px) {
+  @media (max-width: 1799px) {
     padding: 25px 40px;
 
     a,
@@ -152,7 +152,7 @@
   color: $color;
   text-align: center;
 
-  @media (max-width: 1549px) {
+  @media (max-width: 1799px) {
     font-size: 54px;
   }
 }
@@ -163,7 +163,7 @@
   color: $color;
   text-align: center;
 
-  @media (max-width: 1549px) {
+  @media (max-width: 1799px) {
     font-size: 40px;
   }
 }
@@ -175,7 +175,7 @@
   text-align: $text-align;
   line-height: 1.3em;
 
-  @media (max-width: 1549px) {
+  @media (max-width: 1799px) {
     font-size: 32px;
   }
 }
@@ -187,7 +187,7 @@
   text-align: $text-align;
   line-height: 1.3em;
 
-  @media (max-width: 1549px) {
+  @media (max-width: 1799px) {
     font-size: 28px;
   }
 }
@@ -197,7 +197,7 @@
   color: $color;
   text-align: $text-align;
 
-  @media (max-width: 1549px) {
+  @media (max-width: 1799px) {
     font-size: 26px;
   }
 
@@ -212,7 +212,7 @@
   color: $color;
   text-align: $text-align;
 
-  @media (max-width: 1549px) {
+  @media (max-width: 1799px) {
     font-size: 20px;
   }
 
@@ -239,7 +239,7 @@
       height: 40px;
     }
 
-    @media (max-width: 1549px) {
+    @media (max-width: 1799px) {
       padding-left: 40px;
 
       &:before {

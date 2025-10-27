@@ -44,7 +44,7 @@
             max-width: 100%;
         }
 
-        @media (max-width: 1549px) {
+        @media (max-width: 1799px) {
             width: 60px;
         }
     }
@@ -320,7 +320,7 @@
                             transform: translateX(-50%);
                             margin-top: 70px;
 
-                            @media (max-width: 1549px) {
+                            @media (max-width: 1799px) {
                                 width: 290px;
                             }
 
@@ -390,7 +390,7 @@
                 padding: 130px 100px;
                 background: linear-gradient(to top, #9fbacd, #103a59);
 
-                @media (max-width: 1549px) {
+                @media (max-width: 1799px) {
                     padding: 110px 80px;
                 }
                 @media (max-width: 767px) {

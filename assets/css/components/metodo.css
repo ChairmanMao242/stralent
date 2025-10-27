@@ -39,7 +39,7 @@
   color: white;
   text-align: center;
 }
-@media (max-width: 1549px) {
+@media (max-width: 1799px) {
   .metodo__title {
     font-size: 54px;
   }
@@ -60,7 +60,7 @@
   color: white;
   text-align: center;
 }
-@media (max-width: 1549px) {
+@media (max-width: 1799px) {
   .metodo__subtitle {
     font-size: 40px;
   }
@@ -79,16 +79,16 @@
 }
 .metodo__col {
   position: relative;
-  width: calc((100% / 3) - 26.6666666667px);
+  width: calc(100% / 3 - 26.6666666667px);
 }
-@media (max-width: 1549px) {
+@media (max-width: 1799px) {
   .metodo__col {
-    width: calc((100% / 3) - 20px);
+    width: calc(100% / 3 - 20px);
   }
 }
 @media (max-width: 991px) {
   .metodo__col {
-    width: calc((100% / 3) - 20px);
+    width: calc(100% / 3 - 20px);
   }
 }
 @media (max-width: 767px) {
@@ -117,7 +117,7 @@
   color: #023f5c;
   text-align: center;
 }
-@media (max-width: 1549px) {
+@media (max-width: 1799px) {
   .metodo__heading {
     font-size: 40px;
   }
@@ -131,7 +131,7 @@
   color: #023f5c;
   text-align: center;
 }
-@media (max-width: 1549px) {
+@media (max-width: 1799px) {
   .metodo__desc {
     font-size: 26px;
   }
@@ -176,7 +176,7 @@
   display: block;
   max-width: 100%;
 }
-@media (max-width: 1549px) {
+@media (max-width: 1799px) {
   .metodo__star {
     width: 60px;
   }
@@ -220,13 +220,13 @@
   background-color: #6f8fa7;
   margin-right: 30px;
 }
-@media (max-width: 1549px) {
+@media (max-width: 1799px) {
   .metodo__tag {
     padding: 25px 40px;
   }
   .metodo__tag a,
-.metodo__tag button,
-.metodo__tag span {
+  .metodo__tag button,
+  .metodo__tag span {
     font-size: 30px;
   }
   .metodo__tag:before {
@@ -237,8 +237,8 @@
 }
 @media (max-width: 991px) {
   .metodo__tag a,
-.metodo__tag button,
-.metodo__tag span {
+  .metodo__tag button,
+  .metodo__tag span {
     font-size: 24px;
   }
 }
@@ -330,13 +330,13 @@
   background-color: #ff990e;
   margin-right: 30px;
 }
-@media (max-width: 1549px) {
+@media (max-width: 1799px) {
   .metodo__cta {
     padding: 25px 40px;
   }
   .metodo__cta a,
-.metodo__cta button,
-.metodo__cta span {
+  .metodo__cta button,
+  .metodo__cta span {
     font-size: 30px;
   }
   .metodo__cta:before {
@@ -347,8 +347,8 @@
 }
 @media (max-width: 991px) {
   .metodo__cta a,
-.metodo__cta button,
-.metodo__cta span {
+  .metodo__cta button,
+  .metodo__cta span {
     font-size: 24px;
   }
 }
@@ -381,5 +381,3 @@
     justify-content: center;
   }
 }
-
-/*# sourceMappingURL=metodo.css.map */

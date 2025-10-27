@@ -3,7 +3,7 @@
 .what {
   margin-top: 70px;
 }
-@media (max-width: 1549px) {
+@media (max-width: 1799px) {
   .what {
     margin-top: 50px;
   }
@@ -27,7 +27,7 @@
   color: #023f5c;
   text-align: center;
 }
-@media (max-width: 1549px) {
+@media (max-width: 1799px) {
   .what__title {
     font-size: 54px;
   }
@@ -40,7 +40,7 @@
   margin-top: 70px;
   gap: 100px;
 }
-@media (max-width: 1549px) {
+@media (max-width: 1799px) {
   .what__cols {
     gap: 50px;
     margin-top: 50px;
@@ -54,16 +54,16 @@
 .what__col {
   color: white;
   position: relative;
-  width: calc((100% / 3) - 66.6666666667px);
+  width: calc(100% / 3 - 66.6666666667px);
 }
-@media (max-width: 1549px) {
+@media (max-width: 1799px) {
   .what__col {
-    width: calc((100% / 3) - 33.3333333333px);
+    width: calc(100% / 3 - 33.3333333333px);
   }
 }
 @media (max-width: 991px) {
   .what__col {
-    width: calc((100% / 3) - 20px);
+    width: calc(100% / 3 - 20px);
   }
 }
 @media (max-width: 767px) {
@@ -83,7 +83,7 @@
   overflow: hidden;
   position: relative;
 }
-@media (max-width: 1549px) {
+@media (max-width: 1799px) {
   .what__box {
     padding: 60px 0;
   }
@@ -102,7 +102,7 @@
   height: 90px;
   background-color: red;
 }
-@media (max-width: 1549px) {
+@media (max-width: 1799px) {
   .what__box:before, .what__box:after {
     height: 60px;
   }
@@ -186,7 +186,7 @@
 .what__star img {
   display: block;
 }
-@media (max-width: 1549px) {
+@media (max-width: 1799px) {
   .what__star img {
     width: 50px;
   }
@@ -218,7 +218,7 @@
   color: white;
   text-align: center;
 }
-@media (max-width: 1549px) {
+@media (max-width: 1799px) {
   .what__subtitle {
     font-size: 40px;
   }
@@ -232,7 +232,7 @@
   text-align: center;
   margin-top: 20px;
 }
-@media (max-width: 1549px) {
+@media (max-width: 1799px) {
   .what__text {
     font-size: 24px;
   }
@@ -243,7 +243,7 @@
   color: #023f5c;
   text-align: center;
 }
-@media (max-width: 1549px) {
+@media (max-width: 1799px) {
   .what__content {
     font-size: 26px;
   }
@@ -257,10 +257,8 @@
   margin: 70px auto 0;
   max-width: 1100px;
 }
-@media (max-width: 1549px) {
+@media (max-width: 1799px) {
   .what__content {
     margin-top: 50px;
   }
 }
-
-/*# sourceMappingURL=what.css.map */
