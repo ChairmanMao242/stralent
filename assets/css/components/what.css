@@ -262,3 +262,7 @@
     margin-top: 50px;
   }
 }
+.what__content strong,
+.what__content b {
+  font-weight: 700;
+}

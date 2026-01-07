@@ -79,7 +79,7 @@
 .contatti__content .contatti__title {
   text-align: left;
   position: relative;
-  padding-left: 30px;
+  padding-left: 50px;
 }
 .contatti__content .contatti__title:before {
   content: "";
@@ -174,8 +174,13 @@
   }
 }
 @media (max-width: 767px) {
+  .contatti__cta {
+    padding: 20px 30px;
+  }
   .contatti__cta:before {
     margin-right: 10px;
+    width: 15px;
+    height: 15px;
   }
 }
 .contatti__cta:after {
@@ -264,8 +269,13 @@
   }
 }
 @media (max-width: 767px) {
+  .contatti__button {
+    padding: 20px 30px;
+  }
   .contatti__button:before {
     margin-right: 10px;
+    width: 15px;
+    height: 15px;
   }
 }
 .contatti__form {
@@ -273,7 +283,7 @@
   background-color: #ebebeb;
   max-width: 1200px;
   width: 100%;
-  margin: 50px auto 0;
+  margin: 30px auto 0;
   border-radius: 40px;
   padding: 70px 80px 0;
   text-align: center;
@@ -297,7 +307,7 @@
   background-color: white;
   border: none;
   font-size: 30px;
-  border-radius: 60px;
+  border-radius: 15px;
   width: 100%;
   max-width: 100%;
   height: 100px;
@@ -372,4 +382,70 @@
   .contatti__button span {
     display: none;
   }
+}
+
+/* Contatti Modal */
+.contatti-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 999;
+  transition: opacity 0.3s ease;
+}
+.contatti-modal--open {
+  opacity: 1;
+  pointer-events: auto;
+}
+.contatti-modal__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+}
+.contatti-modal__content {
+  position: relative;
+  width: 90%;
+  max-height: 100dvh;
+  overflow-y: auto;
+  z-index: 1000;
+}
+.contatti-modal__close {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  background: none;
+  border: none;
+  font-size: 32px;
+  cursor: pointer;
+  color: #023f5c;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contatti-modal__close:hover {
+  color: #000;
+}
+.contatti-modal .contatti {
+  padding-top: 50px;
+  margin-top: 0;
+}
+.contatti-modal .contatti__title {
+  margin-bottom: 30px;
+}
+.contatti-modal .contatti__text {
+  margin-bottom: 20px;
+  margin-top: -20px;
 }

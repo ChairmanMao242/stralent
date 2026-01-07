@@ -25,6 +25,7 @@
                 position: absolute;
                 right: -90px;
                 bottom: 20px;
+                
                 @media (max-width: 1799px) {
                     height: 200px;
                     bottom: 10px;
@@ -50,7 +51,7 @@
                 @media (max-width: 1799px) {
                     width: 50px;
                     height: 50px;
-                    bottom: 10px;
+                    bottom: 4px;
                     right: -85px;
                 }
 
@@ -109,7 +110,7 @@
             display: block;
         }
 
-        &:hover {
+        &:hover,&.swiper-slide-active {
             .blog__hover {
                 opacity: 1;
             }

@@ -19,6 +19,10 @@
         background: linear-gradient(to bottom, #9fbacd, #103a59);
         border-radius: 80px;
 
+        @media (max-width: 767px) {
+            border-radius: 20px;
+        }
+
         &:after {
             content: "";
             display: block;
@@ -46,6 +50,15 @@
 
         @media (max-width: 1799px) {
             width: 60px;
+        }
+
+        @media (max-width: 767px) {
+            position: absolute;
+            top: -160px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+            width: 40px;
         }
     }
 
@@ -86,7 +99,7 @@
             width: 20px;
             height: 200px;
             border-radius: 10px;
-            margin-bottom: 10px;
+            margin-bottom: 30px;
 
             .blog & {
                 display: none;
@@ -102,7 +115,7 @@
 
     &__date {
         @include mixins.text(white, left);
-        
+
         strong {
             color: white;
             font-weight: 700 !important;
@@ -116,6 +129,10 @@
             height: 200px;
             border-radius: 10px;
             margin-bottom: 10px;
+
+            @media (max-width: 767px) {
+                height: 100px;
+            }
         }
     }
 

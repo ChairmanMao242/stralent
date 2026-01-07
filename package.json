@@ -2,10 +2,13 @@
   "name": "stralent-html5-scss-project",
   "version": "1.0.0",
   "scripts": {
-    "build": "sass assets/styles.scss assets/styles.css --no-source-map --style=expanded",
-    "watch": "sass --watch assets/styles.scss:assets/styles.css --no-source-map --style=expanded"
+    "build": "sass assets/css/styles.scss:assets/css/styles.css --no-source-map --style=expanded",
+    "watch": "sass --watch assets/css:assets/css --no-source-map --style=expanded",
+    "serve": "live-server",
+    "dev": "npm run watch & npm run serve"
   },
   "devDependencies": {
+    "live-server": "^1.2.2",
     "sass": "^1.69.0"
   }
 }

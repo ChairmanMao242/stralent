@@ -8,6 +8,10 @@
     position: relative;
     text-align: center;
 
+    @media (max-width: 767px) {
+        border-radius: 20px 20px 0 0;
+    }
+
     &:before {
         content: "";
         display: block;
@@ -136,8 +140,10 @@
         width: 800px;
         max-width: 100%;
         margin: 150px auto 0;
-        padding-top: 100px;
         position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
 
         @media (max-width: 767px) {
             margin: 100px auto 0;
@@ -167,7 +173,7 @@
 
         .metodo__desc {
             color: white;
-            margin-top: 25px;
+            margin-top: 15px;
 
             @media (max-width: 767px) {
                 margin-top: 0;
@@ -176,11 +182,14 @@
         }
     }
 
+    &__circle-inner {
+        padding-bottom: 145px;
+    }
+
     &__cta {
         @include mixins.button(white, #023f5c, #ff990e);
-        margin-top: 40px;
+        margin-top: 65px;
         position: absolute;
-        bottom: 100px;
         right: -50px;
 
         @media (max-width: 991px) {

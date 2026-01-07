@@ -5,7 +5,7 @@
 }
 @media (max-width: 1799px) {
   .why {
-    margin-top: 50px;
+    margin-top: 100px;
   }
 }
 .why__container {
@@ -259,6 +259,6 @@
 }
 @media (max-width: 1799px) {
   .why__content {
-    margin-top: 50px;
+    margin-top: 70px;
   }
 }

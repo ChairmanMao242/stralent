@@ -139,8 +139,12 @@
   }
 
   @media (max-width: 767px) {
+    padding: 20px 30px;
+
     &:before {
       margin-right: 10px;
+      width: 15px;
+      height: 15px;
     }
   }
 }
