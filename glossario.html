@@ -10,115 +10,488 @@
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
-<body class="blog">
+<body class="glossario">
 
     <header class="header">
 
         <a href="./" class="header__logo">
             <img src="./assets/img/logo-stralent.svg" alt="Logo Stralent" />
         </a>
-        <div class="header__tag">Think</div>
+        <div class="header__tag">Glossario</div>
 
         <div id="header-menu"></div>
 
         <div class="header__payoff">
-            <h1>Questo è il blog di Stralent,
-                dove condividere le innovazioni
-                portate dall’HR-Marketing.</h1>
+            <h1>Il linguaggio dell’innovazione<br />
+                tra Risorse Umane <br />
+                e Marketing</h1>
         </div>
     </header>
 
     <main class="main">
+        <section class="what">
+            <div class="what__container">
 
-        <section class="section">
-            <div class="section__container">
-                <div class="section__box">
-                    <div class="section__star">
-                        <img src="./assets/img/icons/icon-star--yellow.svg" alt="Star" />
-                    </div>
-                    <div class="section__cols">
-                        <div class="section__image">
-                            <img src="./assets/img/blog.png" alt="Il Blog di Stralent" />
-                        </div>
-                        <div class="section__content">
-                            <div class="section__date">15 Novembre 2020 | <strong>HR Marketing</strong></div>
-                            <div class="section__title">
-                                Comunicazione interna aziendale: la leva strategica che stai
-                                sottovalutando
-                            </div>
-                            <div class="section__text">
-                                <p>Scopri perché la comunicazione interna aziendale è oggi un driver strategico per
-                                    engagement, retention e produttività. È il momento di agire. Che cos’è davvero la
-                                    comunicazione interna aziendale La comunicazione interna aziendale non è (solo) la
-                                    newsletter del lunedì mattina o il portale intranet con le policy aggiornate.È, a
-                                    tutti gli effetti, l’insieme di processi, strumenti e contenuti che
-                                    un’organizzazione utilizza per […]
-                                </p>
-                            </div>
+                <div class="what__content">
+                    <p>In Stralent crediamo che le parole guidino la cultura. Questo glossario nasce per aiutare HR,
+                        Marketer, CEO e Innovatori a parlare una lingua comune. Perché conoscere i concetti chiave
+                        dell’HR-Marketing significa comprendere meglio le leve del cambiamento. </p>
+                </div>
+
+        </section>
+
+        <section class="contatti contatti--search">
+            <div class="contatti__container">
+                <div class="contatti__newsletter">
+                    <div class="contatti__form">
+                        <div class="contatti__text">Cosa vuoi comprendere</div>
+                        <div class="contatti__wrap">
+                            <div class="contatti__pre">Cerca per parola chiave</div>
+                            <input class="contatti__input" id="glossary-search" type="text"
+                                placeholder="Scrivi qui la parola da cercare" />
                         </div>
                     </div>
-                    <div class="section__cta"><a href="#">Leggi <span>l'articolo</span></a></div>
                 </div>
             </div>
         </section>
 
-        <section class="blog-list">
-            <div class="blog-list__container">
+        <section class="accordion">
+            <div class="accordion__container">
+                <!-- Indice alfabetico -->
+                <div class="accordion__alphabet">
+                    <button data-letter="A">A</button>
+                    <button data-letter="B">B</button>
+                    <button data-letter="C">C</button>
+                    <button data-letter="D">D</button>
+                    <button data-letter="E">E</button>
+                    <button data-letter="F">F</button>
+                    <button data-letter="G">G</button>
+                    <button data-letter="H">H</button>
+                    <button data-letter="I">I</button>
+                    <button data-letter="J">J</button>
+                    <button data-letter="K">K</button>
+                    <button data-letter="L">L</button>
+                    <button data-letter="M">M</button>
+                    <button data-letter="N">N</button>
+                    <button data-letter="O">O</button>
+                    <button data-letter="P">P</button>
+                    <button data-letter="Q">Q</button>
+                    <button data-letter="R">R</button>
+                    <button data-letter="S">S</button>
+                    <button data-letter="T">T</button>
+                    <button data-letter="U">U</button>
+                    <button data-letter="V">V</button>
+                    <button data-letter="W">W</button>
+                    <button data-letter="X">X</button>
+                    <button data-letter="Y">Y</button>
+                    <button data-letter="Z">Z</button>
+                </div>
 
-                <div class="blog-list__grid">
-                    <div class="blog-list__item">
-                        <div class="blog-list__image">
-                            <img src="./assets/img/blog/1.jpg" alt="Blog Post" />
+                <!-- Lista accordion -->
+                <div class="accordion__list">
+
+                    <!-- Behavioral HR Marketing -->
+                    <div class="accordion__item" data-letter="B">
+                        <div class="accordion__header">
+                            <h3 class="accordion__title">Behavioral HR Marketing</h3>
+                            <span class="accordion__toggle"></span>
                         </div>
-                        <div class="blog-list__date">30 Giguno 2023</div>
-                        <div class="blog-list__title">Titolo del blog post 1</div>
-                        <div class="blog-list__excerpt">Estratto del blog post 1...</div>
-                        <div class="blog-list__link"><a href="#">Leggi tutto</a></div>
+                        <div class="accordion__content">
+                            <div class="accordion__inner">
+                                <div class="accordion__section">
+                                    <strong>Definizione:</strong><br>
+                                    Il Behavioral HR-Marketing applica le scienze comportamentali alla comunicazione HR,
+                                    con l'obiettivo di progettare interazioni più efficaci, persuasive e coinvolgenti.
+                                    Utilizza principi come il nudging, l'architettura delle scelte, i bias cognitivi e
+                                    la psicologia motivazionale per migliorare l'attrazione, l'engagement e la
+                                    retention.
+                                </div>
+                                <div class="accordion__section">
+                                    <strong>In Stralent:</strong><br>
+                                    Disegniamo flussi HR ispirati al comportamento umano reale, non solo ideale.
+                                    Applichiamo principi behavioral per aumentare l'efficacia delle comunicazioni, la
+                                    ricezione dei messaggi, l'adozione delle iniziative e la qualità dell'esperienza
+                                    vissuta dalle persone.
+                                </div>
+                                <div class="accordion__section">
+                                    <strong>Tag:</strong><br>
+                                    Employer Branding / Talent Attraction / Talent Acquisition / Internal Branding /
+                                    Comunicazione interna
+                                </div>
+                                <div class="accordion__section">
+                                    <strong>Contenuto correlato:</strong><br>
+                                    Articolo blog: TBD<br>
+                                    Caso studio: TBD
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="blog-list__item">
-                        <div class="blog-list__image">
-                            <img src="./assets/img/blog/1.jpg" alt="Blog Post" />
+
+                    <!-- Brand Advocate -->
+                    <div class="accordion__item" data-letter="B">
+                        <div class="accordion__header">
+                            <h3 class="accordion__title">Brand Advocate</h3>
+                            <span class="accordion__toggle"></span>
                         </div>
-                        <div class="blog-list__date">30 Giguno 2023</div>
-                        <div class="blog-list__title">Titolo del blog post 1</div>
-                        <div class="blog-list__excerpt">Estratto del blog post 1...</div>
-                        <div class="blog-list__link"><a href="#">Leggi tutto</a></div>
+                        <div class="accordion__content">
+                            <div class="accordion__inner">
+                                <div class="accordion__section">
+                                    <strong>Definizione:</strong><br>
+                                    I Brand Advocates sono dipendenti che promuovono l'azienda in modo spontaneo, non
+                                    necessariamente su mandato o con visibilità ufficiale. Sono attori chiave della
+                                    reputazione aziendale perché agiscono con genuinità e credibilità: parlano bene del
+                                    proprio lavoro, difendono la cultura aziendale e influenzano in modo positivo la
+                                    percezione interna ed esterna del brand.
+                                </div>
+                                <div class="accordion__section">
+                                    <strong>In Stralent:</strong><br>
+                                    Mappiamo e valorizziamo gli advocate naturali attraverso strategie di ascolto,
+                                    riconoscimento e ingaggio. Li mettiamo in condizione di esprimere liberamente la
+                                    loro esperienza, creando circoli virtuosi di fiducia e identificazione.
+                                </div>
+                                <div class="accordion__section">
+                                    <strong>Tag:</strong><br>
+                                    Employer Branding / Talent Attraction / Talent Acquisition / Internal Branding
+                                </div>
+                                <div class="accordion__section">
+                                    <strong>Contenuto correlato:</strong><br>
+                                    Articolo blog: <a href="#">Che differenza c'è tra Brand Ambassador e Brand
+                                        Advocate?</a><br>
+                                    Caso studio: TBD
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="blog-list__item">
-                        <div class="blog-list__image">
-                            <img src="./assets/img/blog/1.jpg" alt="Blog Post" />
+
+                    <!-- Brand Ambassador -->
+                    <div class="accordion__item" data-letter="B">
+                        <div class="accordion__header">
+                            <h3 class="accordion__title">Brand Ambassador</h3>
+                            <span class="accordion__toggle"></span>
                         </div>
-                        <div class="blog-list__date">30 Giguno 2023</div>
-                        <div class="blog-list__title">Titolo del blog post 1</div>
-                        <div class="blog-list__excerpt">Estratto del blog post 1...</div>
-                        <div class="blog-list__link"><a href="#">Leggi tutto</a></div>
+                        <div class="accordion__content">
+                            <div class="accordion__inner">
+                                <div class="accordion__section">
+                                    <strong>Definizione:</strong><br>
+                                    Il Brand Ambassador è un dipendente o collaboratore selezionato che rappresenta
+                                    ufficialmente i valori e la cultura aziendale, sia all'interno che all'esterno. Non
+                                    è solo una figura di visibilità, ma anche un punto di riferimento identitario, un
+                                    moltiplicatore di ingaggio e un testimonial strategico in momenti chiave (eventi,
+                                    campagne, onboarding, social).
+                                </div>
+                                <div class="accordion__section">
+                                    <strong>In Stralent:</strong><br>
+                                    Supportiamo l'azienda nella scelta dei propri Brand Ambassador e li formiamo in modo
+                                    che incarnino in modo coerente l'identità dell'organizzazione. Li accompagniamo
+                                    nella co-creazione di contenuti on-line e off-line, nell'attivazione di community e
+                                    nella diffusione valoriale attraverso canali formali e informali.
+                                </div>
+                                <div class="accordion__section">
+                                    <strong>Tag:</strong><br>
+                                    Employer Branding / Talent Attraction / Talent Acquisition / Internal Branding
+                                </div>
+                                <div class="accordion__section">
+                                    <strong>Contenuto correlato:</strong><br>
+                                    Articolo blog: <a href="#">Che differenza c'è tra Brand Ambassador e Brand
+                                        Advocate?</a><br>
+                                    Caso studio: TBD
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="blog-list__item">
-                        <div class="blog-list__image">
-                            <img src="./assets/img/blog/1.jpg" alt="Blog Post" />
+
+                    <!-- Employer Brand Essence -->
+                    <div class="accordion__item" data-letter="E">
+                        <div class="accordion__header">
+                            <h3 class="accordion__title">Employer Brand Essence</h3>
+                            <span class="accordion__toggle"></span>
                         </div>
-                        <div class="blog-list__date">30 Giguno 2023</div>
-                        <div class="blog-list__title">Titolo del blog post 1</div>
-                        <div class="blog-list__excerpt">Estratto del blog post 1...</div>
-                        <div class="blog-list__link"><a href="#">Leggi tutto</a></div>
+                        <div class="accordion__content">
+                            <div class="accordion__inner">
+                                <div class="accordion__section">
+                                    <strong>Definizione:</strong><br>
+                                    L'Employer Brand Essence è il nucleo identitario del brand come datore di lavoro.
+                                    Racchiude in poche parole, e spesso in una formula, l'anima distintiva
+                                    dell'esperienza lavorativa offerta: ciò che rende un'azienda unica e riconoscibile
+                                    come luogo in cui lavorare. È il fondamento culturale e simbolico su cui costruire
+                                    tutta la comunicazione di Employer Branding.
+                                </div>
+                                <div class="accordion__section">
+                                    <strong>In Stralent:</strong><br>
+                                    Aiutiamo le aziende a definire la loro Employer Brand Essence attraverso workshop
+                                    identitari, storytelling interno, analisi semantica e di mercato. La rendiamo
+                                    tangibile in ogni punto di contatto, per garantire coerenza tra narrazione e realtà.
+                                </div>
+                                <div class="accordion__section">
+                                    <strong>Tag:</strong><br>
+                                    Employer Branding / Cultura / Talent Attraction / Talent Acquisition
+                                </div>
+                                <div class="accordion__section">
+                                    <strong>Contenuto correlato:</strong><br>
+                                    Articolo blog: TBD<br>
+                                    Caso studio: <a href="#">Brivio & Viganò</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="blog-list__item">
-                        <div class="blog-list__image">
-                            <img src="./assets/img/blog/1.jpg" alt="Blog Post" />
+
+                    <!-- Employer Branding Advocacy -->
+                    <div class="accordion__item" data-letter="E">
+                        <div class="accordion__header">
+                            <h3 class="accordion__title">Employer Branding Advocacy</h3>
+                            <span class="accordion__toggle"></span>
                         </div>
-                        <div class="blog-list__date">30 Giguno 2023</div>
-                        <div class="blog-list__title">Titolo del blog post 1</div>
-                        <div class="blog-list__excerpt">Estratto del blog post 1...</div>
-                        <div class="blog-list__link"><a href="#">Leggi tutto</a></div>
+                        <div class="accordion__content">
+                            <div class="accordion__inner">
+                                <div class="accordion__section">
+                                    <strong>Definizione:</strong><br>
+                                    L'Employer Branding Advocacy è la strategia che stimola i dipendenti a diventare
+                                    promotori autentici della cultura e dei valori aziendali. Attraverso azioni
+                                    volontarie, come la condivisione di contenuti, il racconto di esperienze e
+                                    l'interazione sui social, le persone diventano parte attiva nella costruzione della
+                                    reputazione del datore di lavoro. Il valore dell'advocacy sta nella sua autenticità:
+                                    non è promozione "spinta", ma narrazione vissuta.
+                                </div>
+                                <div class="accordion__section">
+                                    <strong>In Stralent:</strong><br>
+                                    Progettiamo programmi di advocacy che valorizzano le voci reali delle persone.
+                                    Guidiamo la narrazione bottom-up dell'Employer Brand, allenando mindset, linguaggi e
+                                    comportamenti per trasformare ogni collaboratore in uno storyteller credibile.
+                                </div>
+                                <div class="accordion__section">
+                                    <strong>Tag:</strong><br>
+                                    Employer Branding / Talent Attraction / Talent Acquisition / Internal Branding
+                                </div>
+                                <div class="accordion__section">
+                                    <strong>Contenuto correlato:</strong><br>
+                                    Articolo blog: TBD<br>
+                                    Caso studio: TBD
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="blog-list__item">
-                        <div class="blog-list__image">
-                            <img src="./assets/img/blog/1.jpg" alt="Blog Post" />
+
+                    <!-- Employee Value Proposition (EVP) -->
+                    <div class="accordion__item" data-letter="E">
+                        <div class="accordion__header">
+                            <h3 class="accordion__title">Employee Value Proposition (EVP)</h3>
+                            <span class="accordion__toggle"></span>
                         </div>
-                        <div class="blog-list__date">30 Giguno 2023</div>
-                        <div class="blog-list__title">Titolo del blog post 1</div>
-                        <div class="blog-list__excerpt">Estratto del blog post 1...</div>
-                        <div class="blog-list__link"><a href="#">Leggi tutto</a></div>
+                        <div class="accordion__content">
+                            <div class="accordion__inner">
+                                <div class="accordion__section">
+                                    <strong>Definizione:</strong><br>
+                                    L'Employee Value Proposition è una promessa distintiva che nasce all'interno
+                                    dell'Organizzazione. È l'insieme di benefici, opportunità e valori che un'azienda
+                                    offre ai suoi dipendenti, sia attuali che potenziali, in cambio del loro lavoro,
+                                    competenze e impegno. In sostanza, è la promessa che l'azienda fa ai dipendenti e
+                                    ciò che li rende unici e attraenti come datore di lavoro. Include benefit, valori,
+                                    cultura, sviluppo, missione.
+                                </div>
+                                <div class="accordion__section">
+                                    <strong>In Stralent:</strong><br>
+                                    L'EVP è il cuore pulsante di ogni strategia HR-Marketing. Ne misuriamo la coerenza
+                                    percepita, la allineiamo alla cultura e la traduciamo in narrazioni attivanti.
+                                </div>
+                                <div class="accordion__section">
+                                    <strong>Tag:</strong><br>
+                                    Employee Value Proposition / Employer Branding / Cultura / Comunicazione Interna
+                                </div>
+                                <div class="accordion__section">
+                                    <strong>Contenuto correlato:</strong><br>
+                                    Articolo blog: <a href="#">Come costruire una EVP che attira davvero i
+                                        talenti</a><br>
+                                    Caso studio: <a href="#">EVP e retention: il progetto per [azienda X]</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- HR-Marketing Strategic Concept -->
+                    <div class="accordion__item" data-letter="H">
+                        <div class="accordion__header">
+                            <h3 class="accordion__title">HR-Marketing Strategic Concept</h3>
+                            <span class="accordion__toggle"></span>
+                        </div>
+                        <div class="accordion__content">
+                            <div class="accordion__inner">
+                                <div class="accordion__section">
+                                    <strong>Definizione:</strong><br>
+                                    L'HR-Marketing Strategic Concept è l'idea creativa e narrativa che guida l'intera
+                                    architettura comunicativa di un progetto HR e da forma alla Employer Brand Essence.
+                                    È un concetto chiave, spesso visuale, verbale e valoriale, che tiene insieme
+                                    obiettivi, target, linguaggi e canali, dando coerenza e riconoscibilità alla
+                                    strategia. Come nel marketing classico, il concept consente di orchestrare messaggi
+                                    diversi sotto un'unica cornice significativa.
+                                </div>
+                                <div class="accordion__section">
+                                    <strong>In Stralent:</strong><br>
+                                    Disegniamo concept strategici per dare forma, voce e identità ai progetti HR. Ogni
+                                    concept nasce da insight reali, viene testato sul campo e si traduce in contenuti
+                                    coerenti, memorabili e distintivi.
+                                </div>
+                                <div class="accordion__section">
+                                    <strong>Tag:</strong><br>
+                                    Employer Branding / Cultura / Talent Attraction / Talent Acquisition
+                                </div>
+                                <div class="accordion__section">
+                                    <strong>Contenuto correlato:</strong><br>
+                                    Articolo blog: TBD<br>
+                                    Caso studio: <a href="#">Brivio & Viganò</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Internal Brand Architecture -->
+                    <div class="accordion__item" data-letter="I">
+                        <div class="accordion__header">
+                            <h3 class="accordion__title">Internal Brand Architecture</h3>
+                            <span class="accordion__toggle"></span>
+                        </div>
+                        <div class="accordion__content">
+                            <div class="accordion__inner">
+                                <div class="accordion__section">
+                                    <strong>Definizione:</strong><br>
+                                    L'Internal Brand Architecture è la struttura organizzata dei sotto-brand e dei
+                                    progetti interni che costituiscono l'identità visiva, narrativa e culturale
+                                    dell'azienda. Serve a garantire coerenza, riconoscibilità e sinergia tra iniziative
+                                    HR, programmi di sviluppo, community e campagne di comunicazione interna. Aiuta le
+                                    persone a orientarsi e ad attribuire significato alle esperienze.
+                                </div>
+                                <div class="accordion__section">
+                                    <strong>In Stralent:</strong><br>
+                                    Costruiamo architetture di brand interne che rafforzano la cultura organizzativa.
+                                    Organizziamo progetti, community e iniziative HR in un ecosistema identitario coeso,
+                                    in cui ogni elemento contribuisce a raccontare chi siamo e dove vogliamo andare.
+                                </div>
+                                <div class="accordion__section">
+                                    <strong>Tag:</strong><br>
+                                    Employer Branding / Internal Branding / Comunicazione interna
+                                </div>
+                                <div class="accordion__section">
+                                    <strong>Contenuto correlato:</strong><br>
+                                    Articolo blog: TBD<br>
+                                    Caso studio: TBD
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Offboarding -->
+                    <div class="accordion__item" data-letter="O">
+                        <div class="accordion__header">
+                            <h3 class="accordion__title">Offboarding</h3>
+                            <span class="accordion__toggle"></span>
+                        </div>
+                        <div class="accordion__content">
+                            <div class="accordion__inner">
+                                <div class="accordion__section">
+                                    <strong>Definizione:</strong><br>
+                                    L'Off-boarding è il processo strutturato che accompagna l'uscita di una persona
+                                    dall'organizzazione. Non è solo una fase di chiusura operativa, ma un momento
+                                    strategico per raccogliere insight, valorizzare il contributo passato e coltivare
+                                    una relazione futura (alumni, networking, reputazione). Un buon off-boarding tutela
+                                    la cultura, rafforza la credibilità dell'Employer Brand, sviluppa canali di
+                                    attraction come il referral aziendale e apre a dinamiche di re-hiring.
+                                </div>
+                                <div class="accordion__section">
+                                    <strong>In Stralent:</strong><br>
+                                    Affianchiamo le aziende nella progettazione di percorsi di offboarding umani,
+                                    coerenti e generativi. Li trasformiamo in momenti di comunicazione intenzionale, in
+                                    cui restituire senso, ascoltare attivamente, analizzare i dati e trasformali in
+                                    azioni vincenti per l'Employer Branding e la retention dei talenti.
+                                </div>
+                                <div class="accordion__section">
+                                    <strong>Tag:</strong><br>
+                                    Employer Branding / Internal Branding / Cultura / Comunicazione interna
+                                </div>
+                                <div class="accordion__section">
+                                    <strong>Contenuto correlato:</strong><br>
+                                    Articolo blog: TBD<br>
+                                    Caso studio: TBD
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Onboarding -->
+                    <div class="accordion__item" data-letter="O">
+                        <div class="accordion__header">
+                            <h3 class="accordion__title">Onboarding</h3>
+                            <span class="accordion__toggle"></span>
+                        </div>
+                        <div class="accordion__content">
+                            <div class="accordion__inner">
+                                <div class="accordion__section">
+                                    <strong>Definizione:</strong><br>
+                                    L'Onboarding è il processo attraverso cui una nuova persona viene accolta, orientata
+                                    e integrata in azienda nei suoi primi giorni, settimane e mesi. Non si limita alla
+                                    trasmissione di informazioni pratiche: è un'esperienza progettata per generare
+                                    connessione, sicurezza psicologica, allineamento culturale e motivazione. Un
+                                    onboarding efficace accelera la produttività, riduce il tasso di turnover e rafforza
+                                    il senso di appartenenza sin dai primi touch-point.
+                                </div>
+                                <div class="accordion__section">
+                                    <strong>In Stralent:</strong><br>
+                                    Progettiamo onboarding come esperienze narrative e immersive, pensate per costruire
+                                    legami emotivi, attivare i valori culturali e far sentire ogni persona parte di un
+                                    progetto condiviso fin dal primo giorno. Ne curiamo la coerenza, la
+                                    personalizzazione e il linguaggio, integrando strumenti analogici e digitali.
+                                    Colleghiamo in modo coerente le azioni di Employer Branding all'onboarding
+                                    aziendale, per costruire da subito un legame forte e attrattivo tra Brand e persone.
+                                </div>
+                                <div class="accordion__section">
+                                    <strong>Tag:</strong><br>
+                                    Employer Branding / Internal Branding / Talent Acquisition
+                                </div>
+                                <div class="accordion__section">
+                                    <strong>Contenuto correlato:</strong><br>
+                                    Articolo blog: TBD<br>
+                                    Caso studio: TBD
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Talent Personas -->
+                    <div class="accordion__item" data-letter="T">
+                        <div class="accordion__header">
+                            <h3 class="accordion__title">Talent Personas (o People Personas)</h3>
+                            <span class="accordion__toggle"></span>
+                        </div>
+                        <div class="accordion__content">
+                            <div class="accordion__inner">
+                                <div class="accordion__section">
+                                    <strong>Definizione:</strong><br>
+                                    Le Talent Personas sono rappresentazioni semi-fittizie dei diversi profili di
+                                    dipendenti o candidati target di un'organizzazione. Costruite a partire da dati
+                                    reali (analisi comportamentale, motivazionale, demografica e relazionale), queste
+                                    personas aiutano a comprendere i bisogni, le aspettative, i valori e i driver
+                                    decisionali delle persone. Proprio come nel marketing si usano i buyer personas,
+                                    nell'HR-Marketing le Talent Personas permettono di personalizzare le azioni di
+                                    Employer Branding, le strategie di attraction e acquisition, la comunicazione
+                                    interna, le iniziative di engagement e i percorsi di sviluppo.
+                                </div>
+                                <div class="accordion__section">
+                                    <strong>In Stralent:</strong><br>
+                                    Creiamo Talent Personas per segmentare con precisione le audience interne ed
+                                    esterne. Le usiamo per disegnare esperienze, contenuti e touch-point su misura,
+                                    migliorando il tasso di ingaggio, l'attrattività, l'accettazione delle proposte di
+                                    lavoro e la fidelizzazione del talento.
+                                </div>
+                                <div class="accordion__section">
+                                    <strong>Tag:</strong><br>
+                                    Employer Branding / Talent Attraction / Talent Acquisition / Comunicazione Interna /
+                                    Internal Branding
+                                </div>
+                                <div class="accordion__section">
+                                    <strong>Contenuto correlato:</strong><br>
+                                    Articolo blog: TBD<br>
+                                    Caso studio: TBD
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                 </div>
@@ -151,45 +524,6 @@
     </footer>
 
     <script src="./assets/js/script.js"></script>
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-    <script>
-        function updateSlideClasses(swiperInstance) {
-        }
-        const swiper = new Swiper('.swiper', {
-            slidesPerView: 'auto',
-            centeredSlides: true,
-            spaceBetween: 30,
-            loop: true,
-            autoplay: {
-                delay: 8000,
-                disableOnInteraction: false,
-            },
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            breakpoints: {
-                0: {
-                    slidesPerView: 1,
-                    centeredSlides: false
-                },
-                768: {
-                    slidesPerView: 3,
-                    centeredSlides: true
-                }
-            },
-            on: {
-                init: updateSlideClasses,
-                slideChange: updateSlideClasses
-            }
-        });
-
-    </script>
 </body>
 
 </html>

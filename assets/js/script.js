@@ -121,3 +121,107 @@ document.addEventListener('click', (e) => {
         openModal('newsletter-modal', 'newsletter');
     }
 });
+
+// Accordion functionality
+document.addEventListener('DOMContentLoaded', () => {
+    const accordionItems = document.querySelectorAll('.accordion__item');
+    const alphabetButtons = document.querySelectorAll('.accordion__alphabet button');
+    
+    const scrollToAccordionItem = (target) => {
+        const top = target.getBoundingClientRect().top + window.pageYOffset - 10;
+        window.scrollTo({ top, behavior: 'smooth' });
+    };
+
+    const openAndScrollItem = (item) => {
+        // Chiudi tutti
+        accordionItems.forEach(otherItem => otherItem.classList.remove('active'));
+
+        // Attendi la chiusura degli altri prima di aprire e scrollare
+        setTimeout(() => {
+            item.classList.add('active');
+            // Attendi il reflow dell'apertura prima di calcolare la posizione
+            requestAnimationFrame(() => scrollToAccordionItem(item));
+        }, 500);
+    };
+
+    // Gestione apertura/chiusura accordion
+    accordionItems.forEach(item => {
+        const header = item.querySelector('.accordion__header');
+        header.addEventListener('click', () => {
+            const isActive = item.classList.contains('active');
+            if (isActive) {
+                // Se già aperto, lo chiudiamo e basta
+                item.classList.remove('active');
+                return;
+            }
+            openAndScrollItem(item);
+        });
+    });
+    
+    // Identifica quali lettere hanno voci
+    const availableLetters = new Set();
+    accordionItems.forEach(item => {
+        const letter = item.getAttribute('data-letter');
+        if (letter) {
+            availableLetters.add(letter);
+        }
+    });
+    
+    // Disabilita le lettere senza voci
+    alphabetButtons.forEach(button => {
+        const letter = button.getAttribute('data-letter');
+        if (!availableLetters.has(letter)) {
+            button.disabled = true;
+        } else {
+            // Aggiungi click handler per le lettere disponibili
+            button.addEventListener('click', () => {
+                // Rimuovi active da tutti i bottoni
+                alphabetButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+                
+                // Trova il primo item con questa lettera
+                const firstItem = document.querySelector(`.accordion__item[data-letter="${letter}"]`);
+                if (firstItem) {
+                    openAndScrollItem(firstItem);
+                }
+            });
+        }
+    });
+
+    // Search filter functionality
+    const searchInput = document.getElementById('glossary-search');
+    if (searchInput) {
+        searchInput.addEventListener('input', (e) => {
+            const searchTerm = e.target.value.toLowerCase().trim();
+            
+            accordionItems.forEach(item => {
+                const title = item.querySelector('.accordion__title').textContent.toLowerCase();
+                const content = item.querySelector('.accordion__content').textContent.toLowerCase();
+                
+                if (searchTerm === '' || title.includes(searchTerm) || content.includes(searchTerm)) {
+                    item.style.display = '';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+
+            // Aggiorna le lettere disponibili in base ai risultati filtrati
+            const visibleLetters = new Set();
+            accordionItems.forEach(item => {
+                if (item.style.display !== 'none') {
+                    const letter = item.getAttribute('data-letter');
+                    if (letter) visibleLetters.add(letter);
+                }
+            });
+
+            alphabetButtons.forEach(button => {
+                const letter = button.getAttribute('data-letter');
+                if (!availableLetters.has(letter) || !visibleLetters.has(letter)) {
+                    button.disabled = true;
+                } else {
+                    button.disabled = false;
+                }
+            });
+        });
+    }
+});
