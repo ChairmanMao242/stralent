@@ -129,7 +129,7 @@
     &__form {
         position: relative;
         background-color: #ebebeb;
-        max-width: 1200px;
+        max-width: 1400px;
         width: 100%;
         margin: 30px auto 0;
         border-radius: 40px;
@@ -138,6 +138,7 @@
 
         @media (max-width: 1799px) {
             padding: 50px 60px 0;
+            max-width: 1200px;
         }
 
         @media (max-width: 767px) {
@@ -261,6 +262,7 @@
         position: relative;
         width: 90%;
         max-height: 100dvh;
+        overflow: clip;
         overflow-y: auto;
         z-index: 1000;
     }
@@ -298,4 +300,10 @@
             margin-top: -20px;
         }
     }
+}
+
+#newsletter .contatti {
+    margin-top: 0;
+    padding-bottom: 0;
+    overflow: visible;
 }

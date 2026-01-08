@@ -371,11 +371,14 @@
   margin-top: 40px;
 }
 
-#header-menu {
+.menu--opened #header-menu {
   height: 100dvh;
   overflow: auto;
   position: absolute;
   inset: 0;
+  max-width: 100%;
+  overflow: clip;
+  overflow-y: auto;
 }
 
 .menu {

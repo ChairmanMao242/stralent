@@ -319,12 +319,17 @@
     }
   }
 }
-#header-menu {
-    height: 100dvh;
-    overflow: auto;
-    position: absolute;
-    inset: 0;
+
+.menu--opened #header-menu {
+  height: 100dvh;
+  overflow: auto;
+  position: absolute;
+  inset: 0;
+  max-width: 100%;
+  overflow: clip;
+  overflow-y: auto;
 }
+
 .menu {
   width: 1600px;
   max-width: calc(100dvw - 200px);
