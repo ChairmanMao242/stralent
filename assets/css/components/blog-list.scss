@@ -5,7 +5,7 @@
     text-align: center;
 
     &__container {
-        @include mixins.container(1600px);
+        @include mixins.container(2000px);
     }
 
     &__grid {

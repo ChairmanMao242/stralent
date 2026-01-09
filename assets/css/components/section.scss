@@ -7,7 +7,7 @@
     overflow: hidden;
 
     &__container {
-        @include mixins.container($width: 1600px);
+        @include mixins.container($width: 2000px);
         @media (max-width: 767px) {
             padding-left: 0;
             padding-right: 0;
@@ -17,7 +17,7 @@
     &__box {
         position: relative;
         background: linear-gradient(to bottom, #9fbacd, #103a59);
-        border-radius: 80px;
+        border-radius: 160px 80px 80px 80px;
 
         @media (max-width: 767px) {
             border-radius: 20px;
@@ -83,6 +83,10 @@
             position: absolute;
             right: 35px;
             top: -90px;
+
+            @media (max-width: 1399px) {
+                width: 100%;
+            }
         }
     }
 
@@ -139,11 +143,15 @@
     &__text,
     &__list {
         margin-bottom: 40px;
-        padding-right: 80px;
+        padding-right: 0;
 
         p,
         li {
             @include mixins.text(white, left);
+        }
+
+        @media (max-width: 1599px) {
+            padding-right: 0;
         }
     }
 
@@ -212,24 +220,18 @@
             }
 
             &__content {
-                width: calc(50% + 120px);
+                padding-right: 0px;
             }
 
             &__image {
-                flex: 1;
-                position: relative;
-
                 img {
-                    display: block;
-                    width: calc(100% + 160px);
-                    position: absolute;
-                    right: -40px;
-                    top: -90px;
+                    left: 35px;
                 }
             }
 
             &__cta {
                 @include mixins.button(#023f5c, white, white);
+                margin-bottom: 0;
             }
         }
     }

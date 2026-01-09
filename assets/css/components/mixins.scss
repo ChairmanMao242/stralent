@@ -39,14 +39,19 @@
 }
 
 /* Layout */
-@mixin container($width: 1600px) {
+@mixin container($width: 2000px) {
   width: $width;
   max-width: 100%;
   margin: 0 auto;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 150px;
+  padding-right: 150px;
 
-  @media (max-width: 767px) {
+  @media (max-width: 1399px) {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  @media (max-width: 991px) {
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -130,15 +135,23 @@
     }
   }
 
-  @media (max-width: 991px) {
+  @media (max-width: 1199px) {
+    padding: 20px 30px;
     a,
     button,
     span {
       font-size: 24px;
     }
+
+    &:before {
+      width: 15px;
+      height: 15px;
+      margin-right: 10px;
+    }
   }
 
   @media (max-width: 767px) {
+    /*
     padding: 20px 30px;
 
     &:before {
@@ -146,18 +159,23 @@
       width: 15px;
       height: 15px;
     }
+      */
   }
 }
 
 /* Typography */
 @mixin title($color: #023f5c) {
-  font-size: 90px;
+  font-size: 70px;
   letter-spacing: -0.04em;
   color: $color;
   text-align: center;
 
   @media (max-width: 1799px) {
     font-size: 54px;
+  }
+
+  @media (max-width: 991px) {
+    font-size: 44px;
   }
 }
 
@@ -168,7 +186,8 @@
   text-align: center;
 
   @media (max-width: 1799px) {
-    font-size: 40px;
+    font-size: 36px;
+    margin-top: 4px;
   }
 }
 
@@ -205,8 +224,12 @@
     font-size: 26px;
   }
 
-  @media (max-width: 767px) {
-    font-size: 22px;
+  @media (max-width: 1199px) {
+    font-size: 20px;
+  }
+
+  @media (max-width: 991px) {
+    font-size: 18px;
   }
 }
 
@@ -227,8 +250,8 @@
 @mixin list($color: #fe990f) {
   li {
     position: relative;
-    margin-bottom: 25px;
-    padding-left: 60px;
+    margin-bottom: 10px;
+    padding-left: 34px;
 
     &:before {
       content: "";
@@ -236,19 +259,23 @@
       border-radius: 50%;
       background-color: $color;
       position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
+      top: 12px;
       left: 0;
-      width: 40px;
-      height: 40px;
+      width: 20px;
+      height: 20px;
     }
 
     @media (max-width: 1799px) {
-      padding-left: 40px;
-
       &:before {
-        width: 25px;
-        height: 25px;
+        top: 8px;
+      }
+    }
+    @media (max-width: 1199px) {
+      padding-left: 24px;
+      &:before {
+        width:14px;
+        height: 14px;
+        top: 8px;
       }
     }
   }

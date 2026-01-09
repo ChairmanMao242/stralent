@@ -7,7 +7,7 @@
   background-repeat: no-repeat;
   background-position: bottom center;
   height: auto;
-  aspect-ratio: 1920 / 680;
+  aspect-ratio: 1920 / 600;
   max-height: 700px;
   margin: 0 auto;
   min-width: 100%;
@@ -16,6 +16,11 @@
   @media (max-width: 1799px) {
     aspect-ratio: auto;
     height: 480px;
+  }
+
+  @media (max-width: 991px) {
+    aspect-ratio: auto;
+    height: 390px;
   }
 
   .home & {
@@ -37,18 +42,23 @@
 
   &__logo {
     position: absolute;
-    left: 30px;
-    top: 30px;
+    left: 100px;
+    top: 65px;
 
     @media (max-width: 1799px) {
       img {
         width: 300px;
-        top: 40px;
-        left: 60px;
       }
     }
 
-    @media (max-width: 1199px) {
+    @media (max-width: 1399px) {
+      top: 30px;
+      left: 65px;
+    }
+
+    @media (max-width: 991px) {
+      top: 30px;
+      left: 50px;
       img {
         width: 250px;
       }
@@ -87,15 +97,24 @@
 
   &__tag {
     position: absolute;
-    top: 170px;
-    left: 30px;
+    top: 200px;
+    left: 98px;
     color: white;
     font-size: 36px;
 
     @media (max-width: 1799px) {
-      top: 120px;
+      top: 155px;
     }
 
+    @media (max-width: 1399px) {
+      top: 120px;
+      left: 65px;
+    }
+
+    @media (max-width: 991px) {
+      top: 105px;
+      left: 50px;
+    }
     @media (max-width: 767px) {
       top: 66px;
       font-size: 24px;
@@ -220,7 +239,7 @@
 
       .home & {
         position: relative;
-        top: 260px;
+        top: 320px;
         bottom: auto;
         transform: none;
       }
@@ -232,21 +251,38 @@
 
     h1 {
       color: white;
-      font-size: 100px;
       font-weight: 400;
       line-height: 1em;
       letter-spacing: -0.025em;
       text-align: center;
+      font-size: 70px;
+
+      @media (max-width: 1799px) {
+        font-size: 54px;
+      }
+
 
       .home & {
         text-align: left;
-      }
-    }
+        font-size: 100px;
 
-    @media (max-width: 1799px) {
-      h1 {
-        color: white;
-        font-size: 60px;
+        @media (max-width: 1799px) {
+          color: white;
+          font-size: 80px;
+        }
+
+        @media (max-width: 1399px) {
+          font-size: 70px;
+        }
+
+        @media (max-width: 1199px) {
+          font-size: 60px;
+        }
+
+        @media (max-width: 991px) {
+          font-size: 44px;
+          max-width: 400px;
+        }
       }
     }
 
@@ -265,7 +301,7 @@
       }
 
       h1 {
-        font-size: 50px;
+        font-size: 44px;
 
         br {
           display: none;
@@ -292,8 +328,19 @@
       padding: 0;
       text-align: left;
 
+      @media (max-width: 1399px) {
+        transform: none;
+        left: 62px;
+        top: 220px;
+      }
+
+      @media (max-width: 1199px) {
+        top: 180px;
+      }
+
       @media (max-width: 991px) {
-        left: 30px;
+        top: 140px;
+        left: 50px;
         transform: none;
         margin-top: auto;
       }
@@ -316,6 +363,13 @@
 
     & {
       margin-top: 40px;
+
+      @media (max-width: 1399px) {
+        margin-top: 30px;
+      }
+      @media (max-width: 1199px) {
+        margin-top: 20px;
+      }
     }
   }
 }
@@ -331,7 +385,7 @@
 }
 
 .menu {
-  width: 1600px;
+  width: 2000px;
   max-width: calc(100dvw - 200px);
   margin: 0 auto;
   padding: 40px;
@@ -552,4 +606,8 @@
       }
     }
   }
+}
+
+.header__linkedin {
+  display: none !important;
 }

@@ -5,7 +5,7 @@
     text-align: center;
 
     &__container {
-        @include mixins.container(1600px);
+        @include mixins.container(2000px);
     }
 
     &__title {
@@ -25,7 +25,7 @@
                 position: absolute;
                 right: -90px;
                 bottom: 20px;
-                
+
                 @media (max-width: 1799px) {
                     height: 200px;
                     bottom: 10px;
@@ -47,7 +47,7 @@
                 position: absolute;
                 right: -110px;
                 bottom: 15px;
-                
+
                 @media (max-width: 1799px) {
                     width: 50px;
                     height: 50px;
@@ -110,7 +110,8 @@
             display: block;
         }
 
-        &:hover,&.swiper-slide-active {
+        &:hover,
+        &.swiper-slide-active {
             .blog__hover {
                 opacity: 1;
             }
@@ -127,7 +128,14 @@
         padding: 50px;
         @include mixins.h3(white, left);
 
+        @media (max-width: 1399px) {
+            padding: 35px;
+            font-size: 22px;
+            line-height: 1.3em;
+        }
+
         @media (max-width: 1199px) {
+            font-size:20px;
             padding: 30px;
         }
 
