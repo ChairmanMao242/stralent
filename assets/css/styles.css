@@ -2894,20 +2894,22 @@ table {
   outline: none;
   box-shadow: none;
 }
-.contatti--search .contatti__pre, .contatti--search .contatti__input {
-  width: 100%;
-  flex: 0 0 100%;
-  max-width: 100%;
-}
-.contatti--search .contatti__pre {
-  background: none;
-  font-size: 20px;
-  line-height: 1;
-  height: auto;
-  margin-bottom: 20px;
-}
-.contatti--search .contatti__input {
-  border-radius: 15px;
+@media (max-width: 991px) {
+  .contatti--search .contatti__pre, .contatti--search .contatti__input {
+    width: 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .contatti--search .contatti__pre {
+    background: none;
+    font-size: 20px;
+    line-height: 1;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  .contatti--search .contatti__input {
+    border-radius: 15px;
+  }
 }
 
 input::placeholder {
@@ -2915,15 +2917,32 @@ input::placeholder {
   opacity: 1;
 }
 
+.page-glossario input::placeholder {
+  color: #C3C3C3 !important;
+}
+
 .accordion {
   padding: 60px 0;
   background: #fff;
 }
 .accordion__container {
-  max-width: 100%;
   width: 2000px;
+  max-width: 100%;
   margin: 0 auto;
-  padding: 0 30px;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+@media (max-width: 1399px) {
+  .accordion__container {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+@media (max-width: 991px) {
+  .accordion__container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 .accordion__alphabet {
   display: flex;
@@ -3412,6 +3431,11 @@ input::placeholder {
     max-width: 700px;
   }
 }
+@media (max-width: 991px) {
+  .what__content {
+    max-width: 550px;
+  }
+}
 .what__content strong,
 .what__content b {
   font-weight: 700;
@@ -3422,6 +3446,11 @@ input::placeholder {
   position: relative;
   text-align: center;
   overflow: hidden;
+}
+@media (max-width: 991px) {
+  .section {
+    padding-top: 210px;
+  }
 }
 .section__container {
   width: 2000px;
@@ -3453,6 +3482,15 @@ input::placeholder {
   background: linear-gradient(to bottom, #9fbacd, #103a59);
   border-radius: 160px 80px 80px 80px;
 }
+.page-about .section__box {
+  border-radius: 80px;
+}
+@media (max-width: 991px) {
+  .section__box {
+    border-radius: 80px;
+    margin-top: 160px;
+  }
+}
 @media (max-width: 767px) {
   .section__box {
     border-radius: 20px;
@@ -3471,10 +3509,25 @@ input::placeholder {
   left: 50%;
   transform: translateX(-50%);
 }
+@media (max-width: 991px) {
+  .page-metodo .section__box:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -195px;
+    margin: 0 auto;
+    background-color: #fe990f;
+    width: 20px;
+    height: 140px;
+    border-radius: 10px;
+    left: 50%;
+    transform: translate(-50%, -100%);
+  }
+}
 .section__star {
   position: absolute;
-  top: -10px;
-  right: -20px;
+  top: 1px;
+  right: -7px;
 }
 .section__star img {
   display: block;
@@ -3538,7 +3591,7 @@ input::placeholder {
 }
 .section__title {
   text-align: left;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
 }
 .section__title:before {
   content: "";
@@ -3567,7 +3620,7 @@ input::placeholder {
 }
 .section__subtitle {
   text-align: left;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
 }
 .section__date {
   font-size: 30px;
@@ -3610,7 +3663,7 @@ input::placeholder {
   }
 }
 .section__text, .section__list {
-  margin-bottom: 40px;
+  margin-bottom: 25px;
   padding-right: 0;
 }
 .section__text p,
@@ -3678,7 +3731,7 @@ input::placeholder {
   .section__list li:before {
     width: 14px;
     height: 14px;
-    top: 8px;
+    top: 7px;
   }
 }
 .section__cta {
@@ -3889,7 +3942,7 @@ input::placeholder {
   .section--white .section__list li:before {
     width: 14px;
     height: 14px;
-    top: 8px;
+    top: 7px;
   }
 }
 .section--white .section__content {
@@ -3980,14 +4033,14 @@ input::placeholder {
   margin-bottom: 0;
 }
 .section--about + .section--about {
-  margin-top: 30px;
+  margin-top: 70px;
   padding-top: 100px;
   position: relative;
 }
 .section--about + .section--about:before {
   content: "";
   display: block;
-  width: 140px;
+  width: 320px;
   height: 20px;
   background-color: #033f5b;
   border-radius: 10px;
@@ -4092,9 +4145,19 @@ input::placeholder {
   position: relative;
   right: auto !important;
   top: 0 !important;
+  margin-top: 40px;
+}
+@media (min-width: 992px) and (max-width: 1399px) {
+  .section--about .section__content {
+    padding-right: 0;
+  }
+}
+@media (min-width: 992px) {
+  .section--about .section__image {
+    padding-right: 26px;
+  }
 }
 .section--about .section__image {
-  padding-right: 26px;
   position: relative;
 }
 .section--about .section__image img {
@@ -4183,10 +4246,16 @@ input::placeholder {
   left: 50%;
   transform: translateX(-50%);
   margin-top: 70px;
+  margin-left: -13px;
 }
 @media (max-width: 1799px) {
   .section--about .section__image .section__cta {
     width: 290px;
+  }
+}
+@media (max-width: 1199px) {
+  .section--about .section__image .section__cta {
+    width: auto;
   }
 }
 @media (max-width: 991px) {
@@ -4210,6 +4279,11 @@ input::placeholder {
   left: 50%;
   transform: translateX(-50%);
   z-index: -1;
+}
+@media (max-width: 1199px) {
+  .section--about .section__image .section__cta:after {
+    height: 180px;
+  }
 }
 @media (max-width: 991px) {
   .section--about .section__image .section__cta:after {
@@ -4241,7 +4315,7 @@ input::placeholder {
   font-weight: 700;
   position: absolute;
   left: 0;
-  right: 0;
+  right: 26px;
   bottom: 120px;
   z-index: 9;
   text-align: center;
@@ -4249,6 +4323,7 @@ input::placeholder {
 }
 @media (max-width: 991px) {
   .section--about .section__caption {
+    right: 0;
     bottom: 150px;
     max-width: 300px;
     margin: 0 auto;
@@ -4258,9 +4333,15 @@ input::placeholder {
 .section--quote {
   padding-bottom: 0;
 }
-@media (max-width: 767px) {
+@media (max-width: 1799px) {
   .section--quote {
-    padding: 120px 0 0;
+    padding-top: 130px;
+  }
+}
+@media (max-width: 991px) {
+  .section--quote {
+    padding-top: 0px;
+    margin-top: -20px;
   }
 }
 .section--quote .section__box {
@@ -4424,8 +4505,8 @@ input::placeholder {
   }
   .section__content, .section__image {
     width: 100% !important;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
   .section--white__content, .section--white__image {
     padding-left: 0px;
@@ -4436,6 +4517,7 @@ input::placeholder {
   }
   .section__image img {
     width: 100%;
+    left: auto !important;
     right: auto !important;
     top: 0 !important;
     max-width: 320px;
@@ -4451,6 +4533,12 @@ input::placeholder {
   }
   .section--gradient {
     padding-bottom: 0;
+  }
+}
+
+@media (max-width: 1399px) {
+  .section--about .section__title.section__title--murnigotti {
+    letter-spacing: -3.3px;
   }
 }
 

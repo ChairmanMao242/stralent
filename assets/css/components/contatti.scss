@@ -396,23 +396,24 @@
                 box-shadow: none;
             }
         }
+        @media (max-width: 991px) {
+            &__pre,
+            &__input {
+                width: 100%;
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
 
-        &__pre,
-        &__input {
-            width: 100%;
-            flex: 0 0 100%;
-            max-width: 100%;
-        }
-
-        &__pre {
-            background: none;
-            font-size: 20px;
-            line-height: 1;
-            height: auto;
-            margin-bottom: 20px;
-        }
-        &__input {
-            border-radius: 15px;
+            &__pre {
+                background: none;
+                font-size: 20px;
+                line-height: 1;
+                height: auto;
+                margin-bottom: 20px;
+            }
+            &__input {
+                border-radius: 15px;
+            }
         }
     }
 }
@@ -420,4 +421,7 @@
 input::placeholder {
     color: #033f5b !important;
     opacity: 1;
+}
+.page-glossario input::placeholder {
+    color: #C3C3C3 !important;
 }
