@@ -38,6 +38,12 @@ fetch('./template-parts/header-menu.html')
             document.body.classList.toggle('menu--opened');
         });
     });
+// Load footer template
+fetch('./template-parts/footer.html')
+    .then(response => response.text())
+    .then(html => {
+        document.getElementById('footer').innerHTML = html;
+    });
 
 // Generic template loader
 const templates = {};
@@ -47,7 +53,7 @@ function loadTemplate(name, templatePath, containerId) {
         .then(response => response.text())
         .then(html => {
             templates[name] = html;
-            
+
             // Load into container if present
             const container = document.getElementById(containerId);
             if (container) {
@@ -78,7 +84,7 @@ function initModal(modalId, templateHTML) {
         // Load template content
         modal.querySelector('.modal-body').innerHTML = templateHTML;
         modal.querySelector('.contatti__form').insertAdjacentHTML('beforeend', closeBtn);
-        
+
         // Move title and text inside form
         const title = modal.querySelector('.contatti__title');
         const text = modal.querySelector('.contatti__text');
@@ -89,7 +95,7 @@ function initModal(modalId, templateHTML) {
         if (text && form) {
             form.insertBefore(text, form.children[1]);
         }
-        
+
         // Bind close events
         modal.querySelector('.contatti-modal__overlay').addEventListener('click', () => closeModal(modalId));
         modal.querySelector('.contatti-modal__close').addEventListener('click', () => closeModal(modalId));
@@ -126,7 +132,7 @@ document.addEventListener('click', (e) => {
 document.addEventListener('DOMContentLoaded', () => {
     const accordionItems = document.querySelectorAll('.accordion__item');
     const alphabetButtons = document.querySelectorAll('.accordion__alphabet button');
-    
+
     const scrollToAccordionItem = (target) => {
         const top = target.getBoundingClientRect().top + window.pageYOffset - 10;
         window.scrollTo({ top, behavior: 'smooth' });
@@ -157,7 +163,7 @@ document.addEventListener('DOMContentLoaded', () => {
             openAndScrollItem(item);
         });
     });
-    
+
     // Identifica quali lettere hanno voci
     const availableLetters = new Set();
     accordionItems.forEach(item => {
@@ -166,7 +172,7 @@ document.addEventListener('DOMContentLoaded', () => {
             availableLetters.add(letter);
         }
     });
-    
+
     // Disabilita le lettere senza voci
     alphabetButtons.forEach(button => {
         const letter = button.getAttribute('data-letter');
@@ -178,7 +184,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 // Rimuovi active da tutti i bottoni
                 alphabetButtons.forEach(btn => btn.classList.remove('active'));
                 button.classList.add('active');
-                
+
                 // Trova il primo item con questa lettera
                 const firstItem = document.querySelector(`.accordion__item[data-letter="${letter}"]`);
                 if (firstItem) {
@@ -193,11 +199,11 @@ document.addEventListener('DOMContentLoaded', () => {
     if (searchInput) {
         searchInput.addEventListener('input', (e) => {
             const searchTerm = e.target.value.toLowerCase().trim();
-            
+
             accordionItems.forEach(item => {
                 const title = item.querySelector('.accordion__title').textContent.toLowerCase();
                 const content = item.querySelector('.accordion__content').textContent.toLowerCase();
-                
+
                 if (searchTerm === '' || title.includes(searchTerm) || content.includes(searchTerm)) {
                     item.style.display = '';
                 } else {
