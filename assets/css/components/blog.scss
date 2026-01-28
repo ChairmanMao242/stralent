@@ -8,6 +8,7 @@
         @include mixins.container(2000px);
     }
 
+
     &__title {
         @include mixins.title();
         margin: 70px auto;
@@ -64,6 +65,10 @@
         @media (max-width: 1799px) {
             margin: 50px auto;
         }
+
+        @media (max-width: 767px) {
+            margin: 40px auto;
+        }
     }
 
     &__carousel {
@@ -116,6 +121,10 @@
                 opacity: 1;
             }
         }
+
+        @media (max-width: 767px) {
+            border-radius: 20px;
+        }
     }
 
     &__caption {
@@ -135,7 +144,7 @@
         }
 
         @media (max-width: 1199px) {
-            font-size:20px;
+            font-size: 20px;
             padding: 30px;
         }
 
@@ -174,7 +183,7 @@
             @media (max-width: 767px) {
                 position: relative;
                 transform: none;
-                margin: 30px auto 0;
+                margin: 20px auto 0;
                 left: 0;
                 right: 0;
                 max-width: 100%;

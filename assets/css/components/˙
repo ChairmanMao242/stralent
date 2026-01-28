@@ -286,7 +286,6 @@
           font-size: 32px;
           max-width: 200px;
         }
-
         @media (max-width: 479px) {
           font-size: 30px;
         }
@@ -318,7 +317,7 @@
 
     @media (max-width: 767px) {
       h1 {
-      font-size: 32px;
+        font-size: 42px;
       }
 
       .home & {
@@ -326,9 +325,6 @@
       }
     }
 
-    @media (max-width: 479px) {
-      font-size: 30px;
-    }
     .home & {
       position: absolute;
       left: 50%;

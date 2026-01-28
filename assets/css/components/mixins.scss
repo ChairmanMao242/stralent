@@ -151,15 +151,18 @@
   }
 
   @media (max-width: 767px) {
-    /*
-    padding: 20px 30px;
+    a,
+    button,
+    span {
+      font-size: 20px;
+    }
+    padding: 15px 20px;
 
     &:before {
       margin-right: 10px;
-      width: 15px;
-      height: 15px;
+      width: 10px;
+      height: 10px;
     }
-      */
   }
 }
 
@@ -174,8 +177,19 @@
     font-size: 54px;
   }
 
+  @media (max-width: 1199px) {
+    font-size: 48px;
+  }
+  
   @media (max-width: 991px) {
     font-size: 44px;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 32px;
+  }
+  @media (max-width: 479px) {
+    font-size: 30px;
   }
 }
 
@@ -188,6 +202,13 @@
   @media (max-width: 1799px) {
     font-size: 36px;
     margin-top: 4px;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 32px;
+  }
+  @media (max-width: 479px) {
+    font-size: 30px;
   }
 }
 
@@ -208,10 +229,17 @@
   letter-spacing: -0.05em;
   color: $color;
   text-align: $text-align;
-  line-height: 1.3em;
+  line-height: 1em;
+  .home & {
+    @media (max-width: 1799px) {
+      font-size: 28px;
+      line-height: 1.3em;
+    }
+  }
 
-  @media (max-width: 1799px) {
+  @media (max-width: 1199px) {
     font-size: 28px;
+    line-height: 1.3em;
   }
 }
 @mixin text($color: #023f5c, $text-align: center) {
@@ -273,7 +301,7 @@
     @media (max-width: 1199px) {
       padding-left: 24px;
       &:before {
-        width:14px;
+        width: 14px;
         height: 14px;
         top: 7px;
       }

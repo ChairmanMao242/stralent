@@ -17,6 +17,11 @@
   background-color: #ff990e;
   border-radius: 10px;
 }
+@media (max-width: 767px) {
+  .footer:before {
+    display: none;
+  }
+}
 .footer__logo {
   max-width: 100%;
   text-align: center;

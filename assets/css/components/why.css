@@ -8,6 +8,11 @@
     margin-top: 100px;
   }
 }
+@media (max-width: 767px) {
+  .why {
+    margin-top: 40px;
+  }
+}
 .why__container {
   width: 2000px;
   max-width: 100%;
@@ -38,9 +43,24 @@
     font-size: 54px;
   }
 }
+@media (max-width: 1199px) {
+  .why__title {
+    font-size: 48px;
+  }
+}
 @media (max-width: 991px) {
   .why__title {
     font-size: 44px;
+  }
+}
+@media (max-width: 767px) {
+  .why__title {
+    font-size: 32px;
+  }
+}
+@media (max-width: 479px) {
+  .why__title {
+    font-size: 30px;
   }
 }
 .why__cols {
@@ -60,6 +80,11 @@
 @media (max-width: 991px) {
   .why__cols {
     gap: 25px;
+  }
+}
+@media (max-width: 767px) {
+  .why__cols {
+    margin-top: 40px;
   }
 }
 .why__col {
@@ -83,6 +108,12 @@
     max-width: 460px;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+@media (max-width: 767px) {
+  .why__col {
+    width: 100%;
+    max-width: 340px;
   }
 }
 .why__box {
@@ -146,7 +177,7 @@
 @media (max-width: 767px) {
   .why__box--innovazione {
     background-color: #9fbacd;
-    background: linear-gradient(to bottom, #fff 0px, #fff 60px, #9fbacd 60px, #9fbacd calc(100% - 60px), #fff calc(100% - 60px), #fff 100%);
+    background: linear-gradient(to bottom, #fff 0px, #fff 30px, #9fbacd 30px, #9fbacd calc(100% - 30px), #fff calc(100% - 30px), #fff 100%);
   }
   .why__box--innovazione:after {
     background-image: url("../img/bg/bg-innovazione--bottom.svg");
@@ -164,7 +195,7 @@
 @media (max-width: 767px) {
   .why__box--creativita {
     background-color: #598ba7;
-    background: linear-gradient(to bottom, #fff 0px, #fff 60px, #598ba7 60px, #598ba7 calc(100% - 60px), #fff calc(100% - 60px), #fff 100%);
+    background: linear-gradient(to bottom, #fff 0px, #fff 30px, #598ba7 30px, #598ba7 calc(100% - 30px), #fff calc(100% - 30px), #fff 100%);
   }
   .why__box--creativita:before {
     background-image: url("../img/bg/bg-creativita--top.svg");
@@ -188,7 +219,7 @@
 @media (max-width: 767px) {
   .why__box--risultati {
     background-color: #103b59;
-    background: linear-gradient(to bottom, #fff 0px, #fff 60px, #103b59 60px, #103b59 calc(100% - 60px), #fff calc(100% - 60px), #fff 100%);
+    background: linear-gradient(to bottom, #fff 0px, #fff 30px, #103b59 30px, #103b59 calc(100% - 30px), #fff calc(100% - 30px), #fff 100%);
   }
   .why__box--risultati:before {
     background-image: url("../img/bg/bg-risultati--top.svg");
@@ -233,6 +264,11 @@
   display: block;
   margin: 0 auto;
 }
+@media (max-width: 767px) {
+  .why__icon {
+    margin-top: 10px;
+  }
+}
 .why__subtitle {
   font-size: 60px;
   letter-spacing: -0.05em;
@@ -245,8 +281,23 @@
     margin-top: 4px;
   }
 }
+@media (max-width: 767px) {
+  .why__subtitle {
+    font-size: 32px;
+  }
+}
+@media (max-width: 479px) {
+  .why__subtitle {
+    font-size: 30px;
+  }
+}
 .why__subtitle {
   margin-top: 30px;
+}
+@media (max-width: 767px) {
+  .why__subtitle {
+    margin-top: 5px;
+  }
 }
 .why__text {
   font-size: 28px;
@@ -263,6 +314,11 @@
   .why__text {
     font-size: 18px;
     margin-top: 8px;
+  }
+}
+@media (max-width: 767px) {
+  .why__text {
+    margin-bottom: 15px;
   }
 }
 .why__content {

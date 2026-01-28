@@ -4,6 +4,32 @@
     position: relative;
     text-align: center;
 
+    &--related {
+        &:before {
+            content: "";
+            display: block;
+            margin: 0 auto;
+            background-color: #fe990f;
+            width: 20px;
+            height: 200px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+
+            @media (max-width: 1799px) {
+                height: 150px;
+            }
+
+            @media (max-width: 767px) {
+                height: 80px;
+                width: 12px;
+            }
+        }
+
+        .blog-list__title--big {
+            @include mixins.title();
+        }
+    }
+
     &__container {
         @include mixins.container(2000px);
     }

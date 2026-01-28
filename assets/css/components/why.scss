@@ -7,6 +7,10 @@
         margin-top: 100px;
     }
 
+    @media (max-width: 767px) {
+        margin-top: 40px;
+    }
+
     &__container {
         @include mixins.container(2000px);
     }
@@ -31,11 +35,18 @@
         @media (max-width: 991px) {
             gap: 25px;
         }
+        @media (max-width: 767px) {
+            margin-top: 40px;
+        }
     }
 
     &__col {
         color: white;
         @include mixins.cols(3, 100);
+        @media (max-width: 767px) {
+            width: 100%;
+            max-width: 340px;
+        }
     }
 
     &__box {
@@ -100,10 +111,10 @@
                 background: linear-gradient(
                     to bottom,
                     #fff 0px,
-                    #fff 60px,
-                    #9fbacd 60px,
-                    #9fbacd calc(100% - 60px),
-                    #fff calc(100% - 60px),
+                    #fff 30px,
+                    #9fbacd 30px,
+                    #9fbacd calc(100% - 30px),
+                    #fff calc(100% - 30px),
                     #fff 100%
                 );
 
@@ -129,10 +140,10 @@
                 background: linear-gradient(
                     to bottom,
                     #fff 0px,
-                    #fff 60px,
-                    #598ba7 60px,
-                    #598ba7 calc(100% - 60px),
-                    #fff calc(100% - 60px),
+                    #fff 30px,
+                    #598ba7 30px,
+                    #598ba7 calc(100% - 30px),
+                    #fff calc(100% - 30px),
                     #fff 100%
                 );
 
@@ -164,10 +175,10 @@
                 background: linear-gradient(
                     to bottom,
                     #fff 0px,
-                    #fff 60px,
-                    #103b59 60px,
-                    #103b59 calc(100% - 60px),
-                    #fff calc(100% - 60px),
+                    #fff 30px,
+                    #103b59 30px,
+                    #103b59 calc(100% - 30px),
+                    #fff calc(100% - 30px),
                     #fff 100%
                 );
 
@@ -219,12 +230,20 @@
         height: 142px;
         display: block;
         margin: 0 auto;
+
+        @media (max-width: 767px) {
+            margin-top: 10px;
+        }
     }
 
     &__subtitle {
         @include mixins.subtitle(white);
         & {
             margin-top: 30px;
+
+            @media (max-width: 767px) {
+                margin-top: 5px;
+            }
         }
     }
 
@@ -241,6 +260,9 @@
         @media (max-width: 991px) {
             font-size: 18px;
             margin-top: 8px;
+        }
+        @media (max-width: 767px) {
+            margin-bottom: 15px;
         }
     }
 

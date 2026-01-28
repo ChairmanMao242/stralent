@@ -38,9 +38,24 @@
     font-size: 54px;
   }
 }
+@media (max-width: 1199px) {
+  .what__title {
+    font-size: 48px;
+  }
+}
 @media (max-width: 991px) {
   .what__title {
     font-size: 44px;
+  }
+}
+@media (max-width: 767px) {
+  .what__title {
+    font-size: 32px;
+  }
+}
+@media (max-width: 479px) {
+  .what__title {
+    font-size: 30px;
   }
 }
 .what__cols {
@@ -233,6 +248,16 @@
   .what__subtitle {
     font-size: 36px;
     margin-top: 4px;
+  }
+}
+@media (max-width: 767px) {
+  .what__subtitle {
+    font-size: 32px;
+  }
+}
+@media (max-width: 479px) {
+  .what__subtitle {
+    font-size: 30px;
   }
 }
 .what__subtitle {

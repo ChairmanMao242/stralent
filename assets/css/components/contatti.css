@@ -13,7 +13,8 @@
 }
 @media (max-width: 767px) {
   .contatti {
-    padding-bottom: 120px;
+    padding-bottom: 0px;
+    margin-top: 40px;
   }
 }
 .contatti__container {
@@ -22,9 +23,6 @@
   margin: 0 auto;
   padding-left: 150px;
   padding-right: 150px;
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
 }
 @media (max-width: 1399px) {
   .contatti__container {
@@ -37,6 +35,11 @@
     padding-left: 20px;
     padding-right: 20px;
   }
+}
+.contatti__container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
 }
 @media (max-width: 991px) {
   .contatti__container {
@@ -78,9 +81,24 @@
     font-size: 54px;
   }
 }
+@media (max-width: 1199px) {
+  .contatti__title {
+    font-size: 48px;
+  }
+}
 @media (max-width: 991px) {
   .contatti__title {
     font-size: 44px;
+  }
+}
+@media (max-width: 767px) {
+  .contatti__title {
+    font-size: 32px;
+  }
+}
+@media (max-width: 479px) {
+  .contatti__title {
+    font-size: 30px;
   }
 }
 .contatti__content {
@@ -90,7 +108,8 @@
 @media (max-width: 767px) {
   .contatti__content {
     padding-right: 0;
-    margin-bottom: 50px;
+    padding-left: 0;
+    margin-bottom: 20px;
   }
 }
 .contatti__content .contatti__title {
@@ -108,6 +127,14 @@
   position: absolute;
   left: 0;
 }
+@media (max-width: 767px) {
+  .contatti__content .contatti__title {
+    padding-left: 25px;
+  }
+  .contatti__content .contatti__title:before {
+    width: 12px;
+  }
+}
 .contatti__content .contatti__text {
   margin-top: 40px;
   text-align: left;
@@ -123,7 +150,6 @@
   line-height: 1.3em;
   color: #023f5c;
   text-align: center;
-  margin-top: 4px;
 }
 @media (max-width: 1799px) {
   .contatti__text {
@@ -140,15 +166,15 @@
     font-size: 18px;
   }
 }
+.contatti__text {
+  margin-top: 4px;
+}
 .contatti__cta {
   background-color: #ff990e;
   border-radius: 64px;
   display: inline-flex;
   align-items: center;
   padding: 30px 50px;
-  position: relative;
-  left: 25dvw;
-  transform: translate(-50%, -50%);
 }
 .contatti__cta a,
 .contatti__cta button,
@@ -209,17 +235,24 @@
   }
 }
 @media (max-width: 767px) {
-  .contatti__cta {
-    /*
-    padding: 20px 30px;
-
-    &:before {
-      margin-right: 10px;
-      width: 15px;
-      height: 15px;
-    }
-      */
+  .contatti__cta a,
+  .contatti__cta button,
+  .contatti__cta span {
+    font-size: 20px;
   }
+  .contatti__cta {
+    padding: 15px 20px;
+  }
+  .contatti__cta:before {
+    margin-right: 10px;
+    width: 10px;
+    height: 10px;
+  }
+}
+.contatti__cta {
+  position: relative;
+  left: 25dvw;
+  transform: translate(-50%, -50%);
 }
 .contatti__cta:after {
   content: "";
@@ -240,6 +273,13 @@
   }
 }
 @media (max-width: 767px) {
+  .contatti__cta:after {
+    height: 80px;
+    bottom: -70px;
+    width: 12px;
+  }
+}
+@media (max-width: 767px) {
   .contatti__cta {
     left: 50%;
     transform: translate(-50%, -50%);
@@ -248,6 +288,11 @@
 .contatti__newsletter {
   margin: 130px auto 0;
   max-width: 100%;
+}
+@media (max-width: 767px) {
+  .contatti__newsletter {
+    margin: 65px auto 0;
+  }
 }
 .contatti__button {
   background-color: #023f5c;
@@ -315,16 +360,18 @@
   }
 }
 @media (max-width: 767px) {
+  .contatti__button a,
+  .contatti__button button,
+  .contatti__button span {
+    font-size: 20px;
+  }
   .contatti__button {
-    /*
-    padding: 20px 30px;
-
-    &:before {
-      margin-right: 10px;
-      width: 15px;
-      height: 15px;
-    }
-      */
+    padding: 15px 20px;
+  }
+  .contatti__button:before {
+    margin-right: 10px;
+    width: 10px;
+    height: 10px;
   }
 }
 .contatti__form {
@@ -350,6 +397,7 @@
     width: 100%;
     border-radius: 0;
     width: 100dvw;
+    max-width: 100dvw;
     margin-left: -20px;
     margin-right: -20px;
   }
@@ -388,6 +436,14 @@
     padding: 0 40px;
   }
 }
+@media (max-width: 767px) {
+  .contatti__input {
+    font-size: 18px;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 20px;
+  }
+}
 .contatti__input--checkbox {
   width: 24px;
   height: 24px;
@@ -403,6 +459,13 @@
   background-color: #023f5c;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'%3E%3Cpath d='M20.285 6.709l-11.025 11.025-5.545-5.545 1.414-1.414 4.131 4.131 9.611-9.611z'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
+}
+@media (max-width: 767px) {
+  .contatti__input--checkbox {
+    width: 20px;
+    height: 20px;
+    flex: 0 0 20px;
+  }
 }
 .contatti__input:hover, .contatti__input:active, .contatti__input:focus {
   outline: none;
@@ -437,6 +500,20 @@
     font-size: 14px;
     position: relative;
     top: -2px;
+  }
+}
+@media (max-width: 767px) {
+  .contatti label.contatti__label--checkbox {
+    text-align: left;
+    display: flex;
+    line-height: 1.1em;
+  }
+  .contatti label.contatti__label--checkbox span {
+    padding-left: 5px;
+    color: #999;
+  }
+  .contatti label.contatti__label--checkbox span a {
+    color: #999;
   }
 }
 .contatti__button {
@@ -605,5 +682,5 @@ input::placeholder {
 }
 
 .page-glossario input::placeholder {
-  color: #C3C3C3 !important;
+  color: #c3c3c3 !important;
 }
