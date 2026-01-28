@@ -3980,12 +3980,22 @@ input::placeholder {
   line-height: 1.25rem;
   font-size: 24px;
 }
+@media (max-width: 767px) {
+  .section__excerpt ul {
+    font-size: 18px;
+  }
+}
 .section__excerpt ol {
   list-style: numer;
   padding-left: 20px;
   line-height: 1.25rem;
   margin-bottom: 1.5rem;
   font-size: 24px;
+}
+@media (max-width: 767px) {
+  .section__excerpt ol {
+    font-size: 18px;
+  }
 }
 .section__excerpt b,
 .section__excerpt strong {

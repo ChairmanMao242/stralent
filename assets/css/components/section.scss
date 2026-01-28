@@ -47,6 +47,7 @@
         width: 1200px;
         max-width: 100%;
         margin: 50px auto;
+
         @media (max-width: 1399px) {
             margin-top: -50px;
         }
@@ -88,6 +89,9 @@
             margin-bottom: 1.5rem;
             line-height: 1.25rem;
             font-size: 24px;
+            @media (max-width: 767px) {
+                font-size: 18px;
+            }
         }
 
         ol {
@@ -96,6 +100,9 @@
             line-height: 1.25rem;
             margin-bottom: 1.5rem;
             font-size: 24px;
+            @media (max-width: 767px) {
+                font-size: 18px;
+            }
         }
 
         b,
