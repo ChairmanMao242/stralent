@@ -241,7 +241,6 @@
 }
 .blog .section__content {
   padding-top: 40px;
-  padding-bottom: 40px;
   text-align: left;
 }
 .section__image {
@@ -383,7 +382,7 @@
   top: 40px;
 }
 .blog .section__date:before {
-  top: -50px;
+  top: -20px;
   position: relative;
 }
 .blog-single .section__date {
@@ -403,7 +402,7 @@
   }
 }
 .blog .section__date {
-  padding-top: 50px;
+  padding-top: 10px;
 }
 .section__title-wrap {
   display: flex;
