@@ -2532,6 +2532,7 @@ table {
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
+  line-height: 1.15em;
 }
 .blog-list__excerpt, .blog-list__date {
   font-size: 30px;
@@ -2643,6 +2644,17 @@ table {
     width: 10px;
     height: 10px;
   }
+}
+.blog-list__link {
+  padding-right: 50px;
+}
+@media (max-width: 1199px) {
+  .blog-list__link {
+    padding-right: 40px;
+  }
+}
+.blog-list__link {
+  margin-bottom: 70px;
 }
 
 .contatti {
@@ -3896,6 +3908,30 @@ input::placeholder {
   .blog-single .section {
     padding-top: 0;
   }
+  .section--blog-intro {
+    padding-top: 30px;
+  }
+}
+@media (min-width: 768px) {
+  .section--blog-intro .section__cta {
+    width: auto !important;
+  }
+}
+@media (max-width: 991px) {
+  .section--blog-intro .section__cta {
+    margin-bottom: 120px;
+  }
+}
+@media (max-width: 767px) {
+  .section--blog-intro .section__star {
+    display: none;
+  }
+}
+@media (max-width: 499px) {
+  .section--blog-intro .section__content {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
 .section__container {
   width: 2000px;
@@ -4046,6 +4082,13 @@ input::placeholder {
   left: 50%;
   transform: translateX(-50%);
 }
+@media (max-width: 767px) {
+  .section__box:after {
+    bottom: -90px;
+    width: 12px;
+    height: 180px;
+  }
+}
 @media (max-width: 991px) {
   .page-metodo .section__box:before {
     content: "";
@@ -4117,6 +4160,12 @@ input::placeholder {
 .blog .section__content {
   padding-top: 40px;
   text-align: left;
+}
+@media (max-width: 991px) {
+  .blog .section__content {
+    padding-top: 0;
+    text-align: center;
+  }
 }
 .section__image {
   width: calc(50% - 10px);
@@ -4264,6 +4313,11 @@ input::placeholder {
   top: -20px;
   position: relative;
 }
+@media (max-width: 991px) {
+  .blog .section__date:before {
+    display: none;
+  }
+}
 .blog-single .section__date {
   color: #023f5c !important;
 }
@@ -4286,10 +4340,14 @@ input::placeholder {
 .section__title-wrap {
   display: flex;
   flex-direction: column;
-  height: 360px;
 }
 .blog .section__title-wrap {
   height: 360px;
+}
+@media (max-width: 991px) {
+  .blog .section__title-wrap {
+    height: auto;
+  }
 }
 .section__share {
   text-align: left;

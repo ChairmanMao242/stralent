@@ -20,34 +20,8 @@
         .blog-single & {
             padding-top: 0;
         }
+    }
 
-        &--blog-intro {
-            padding-top: 30px;
-        }
-    }
-    &--blog-intro {
-        .section {
-            &__cta {
-                @media (min-width: 768px) {
-                    width: auto !important;
-                }
-                @media (max-width: 991px) {
-                    margin-bottom: 120px;
-                }
-            }
-            &__star {
-                @media (max-width: 767px) {
-                    display: none;
-                }
-            }
-            &__content {
-                @media (max-width: 499px) {
-                    padding-left: 30px;
-                    padding-right: 30px;
-                }
-            }
-        }
-    }
     &__container {
         @include mixins.container($width: 2000px);
         @media (max-width: 767px) {
@@ -172,12 +146,6 @@
             border-radius: 10px;
             left: 50%;
             transform: translateX(-50%);
-
-            @media (max-width: 767px) {
-                bottom: -90px;
-                width: 12px;
-                height: 180px;
-            }
         }
 
         @media (max-width: 991px) {
@@ -256,11 +224,6 @@
         .blog & {
             padding-top: 40px;
             text-align: left;
-
-            @media (max-width: 991px) {
-                padding-top: 0;
-                text-align: center;
-            }
         }
     }
 
@@ -348,10 +311,6 @@
             .blog & {
                 top: -20px;
                 position: relative;
-
-                @media (max-width: 991px) {
-                    display: none;
-                }
             }
         }
 
@@ -380,13 +339,10 @@
     &__title-wrap {
         display: flex;
         flex-direction: column;
+        height: 360px;
 
         .blog & {
             height: 360px;
-
-            @media (max-width: 991px) {
-                height: auto;
-            }
         }
     }
 
@@ -433,6 +389,9 @@
         .blog & {
             flex: 1;
             margin-bottom: 0;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 4;
             overflow: hidden;
         }
     }
