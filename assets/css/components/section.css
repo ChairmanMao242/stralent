@@ -8,7 +8,7 @@
 }
 .section--blog-single {
   padding-top: 0;
-  padding-bottom: 50px;
+  padding-bottom: 0;
 }
 @media (max-width: 991px) {
   .section {
@@ -61,8 +61,18 @@
     padding-right: 20px;
   }
 }
+@media (max-width: 991px) {
+  .blog-single .section__container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
 @media (max-width: 767px) {
   .section__container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .blog-single .section__container {
     padding-left: 0;
     padding-right: 0;
   }
@@ -93,6 +103,9 @@
   .section__excerpt {
     margin-top: 50px;
   }
+  .blog-single .section__excerpt {
+    margin-bottom: 0;
+  }
 }
 @media (max-width: 767px) {
   .section__excerpt {
@@ -106,7 +119,17 @@
 .section__excerpt h5,
 .section__excerpt h6 {
   font-size: 36px;
+  line-height: 1.2em;
   margin-bottom: 1.5rem;
+}
+@media (max-width: 991px) {
+  .section__excerpt h2,
+  .section__excerpt h3,
+  .section__excerpt h4,
+  .section__excerpt h5,
+  .section__excerpt h6 {
+    font-size: 30px;
+  }
 }
 @media (max-width: 767px) {
   .section__excerpt h2,
@@ -114,7 +137,7 @@
   .section__excerpt h4,
   .section__excerpt h5,
   .section__excerpt h6 {
-    font-size: 26px;
+    font-size: 22px;
   }
 }
 .section__excerpt p {
@@ -426,7 +449,12 @@
 }
 .blog-single .section__date:before {
   position: absolute;
-  top: 40px;
+  top: 15px;
+}
+@media (max-width: 1599px) {
+  .blog-single .section__date:before {
+    display: none;
+  }
 }
 .blog--archive .section__date:before {
   top: -20px;
@@ -1411,6 +1439,7 @@
   .blog-single .section__image img {
     transform: none;
     margin: 20px auto;
+    max-width: 420px;
   }
 }
 @media (max-width: 991px) {

@@ -8,7 +8,7 @@
 
     &--blog-single {
         padding-top: 0;
-        padding-bottom: 50px;
+        padding-bottom: 0;
 
         @media (max-width: 1199px) {
         }
@@ -51,7 +51,19 @@
     }
     &__container {
         @include mixins.container($width: 2000px);
+
+        @media (max-width: 991px) {
+            .blog-single & {
+                padding-left: 40px;
+                padding-right: 40px;
+            }
+        }
+
         @media (max-width: 767px) {
+            .blog-single & {
+                padding-left: 0;
+                padding-right: 0;
+            }
             padding-left: 0;
             padding-right: 0;
         }
@@ -83,6 +95,9 @@
 
         @media (max-width: 991px) {
             margin-top: 50px;
+            .blog-single & {
+                margin-bottom: 0;
+            }
         }
 
         @media (max-width: 767px) {
@@ -96,10 +111,13 @@
         h5,
         h6 {
             font-size: 36px;
+            line-height: 1.2em;
             margin-bottom: 1.5rem;
-
+            @media (max-width: 991px) {
+                font-size: 30px;
+            }
             @media (max-width: 767px) {
-                font-size: 26px;
+                font-size: 22px;
             }
         }
 
@@ -262,7 +280,7 @@
             }
         }
 
-        .blog--archive  & {
+        .blog--archive & {
             padding-top: 40px;
             text-align: left;
 
@@ -360,7 +378,11 @@
 
             .blog-single & {
                 position: absolute;
-                top: 40px;
+                top: 15px;
+
+                @media (max-width: 1599px) {
+                    display: none;
+                }
             }
 
             .blog--archive & {
@@ -846,6 +868,7 @@
                     @media (max-width: 991px) {
                         transform: none;
                         margin: 20px auto;
+                        max-width: 420px;
                     }
                 }
             }

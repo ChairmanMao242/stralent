@@ -13,14 +13,31 @@
   min-width: 100%;
   overflow-x: clip;
 
+  .blog-single & {
+    height: 350px;
+  }
+
   @media (max-width: 1799px) {
     aspect-ratio: auto;
     height: 480px;
+
+    .blog-single & {
+      height: 310px;
+    }
+  }
+
+  @media (max-width: 1399px) {
+    .blog-single & {
+      height: 220px;
+    }
   }
 
   @media (max-width: 991px) {
     aspect-ratio: auto;
     height: 390px;
+    .blog-single & {
+      height: 190px;
+    }
   }
 
   .home & {
@@ -37,6 +54,9 @@
     .home & {
       height: 420px;
       aspect-ratio: auto;
+    }
+    .blog-single & {
+      height: 130px;
     }
   }
 
@@ -318,7 +338,7 @@
 
     @media (max-width: 767px) {
       h1 {
-      font-size: 32px;
+        font-size: 32px;
       }
 
       .home & {

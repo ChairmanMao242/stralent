@@ -13,16 +13,30 @@
   min-width: 100%;
   overflow-x: clip;
 }
+.blog-single .header {
+  height: 350px;
+}
 @media (max-width: 1799px) {
   .header {
     aspect-ratio: auto;
     height: 480px;
+  }
+  .blog-single .header {
+    height: 310px;
+  }
+}
+@media (max-width: 1399px) {
+  .blog-single .header {
+    height: 220px;
   }
 }
 @media (max-width: 991px) {
   .header {
     aspect-ratio: auto;
     height: 390px;
+  }
+  .blog-single .header {
+    height: 190px;
   }
 }
 .home .header {
@@ -39,6 +53,9 @@
   .home .header {
     height: 420px;
     aspect-ratio: auto;
+  }
+  .blog-single .header {
+    height: 130px;
   }
 }
 @media (max-width: 479px) {
@@ -450,13 +467,13 @@
   }
 }
 @media (max-width: 767px) {
+  .header__cta {
+    padding: 15px 20px;
+  }
   .header__cta a,
   .header__cta button,
   .header__cta span {
     font-size: 20px;
-  }
-  .header__cta {
-    padding: 15px 20px;
   }
   .header__cta:before {
     margin-right: 10px;
@@ -597,6 +614,7 @@
   display: inline-flex;
   align-items: center;
   padding: 30px 50px;
+  text-decoration: none;
 }
 .menu__btn a,
 .menu__btn button,
@@ -657,22 +675,19 @@
   }
 }
 @media (max-width: 767px) {
+  .menu__btn {
+    padding: 15px 20px;
+  }
   .menu__btn a,
   .menu__btn button,
   .menu__btn span {
     font-size: 20px;
-  }
-  .menu__btn {
-    padding: 15px 20px;
   }
   .menu__btn:before {
     margin-right: 10px;
     width: 10px;
     height: 10px;
   }
-}
-.menu__btn {
-  text-decoration: none;
 }
 .menu__btn.menu__contattaci, .menu__btn.menu__home {
   background-color: #ff990e;
@@ -770,6 +785,13 @@
   display: inline-flex;
   align-items: center;
   padding: 30px 50px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  padding: 20px 20px;
+  width: calc(100% - 30px);
+  text-align: center;
 }
 .menu__item a > span a,
 .menu__item a > span button,
@@ -830,28 +852,19 @@
   }
 }
 @media (max-width: 767px) {
+  .menu__item a > span {
+    padding: 15px 20px;
+  }
   .menu__item a > span a,
   .menu__item a > span button,
   .menu__item a > span span {
     font-size: 20px;
-  }
-  .menu__item a > span {
-    padding: 15px 20px;
   }
   .menu__item a > span:before {
     margin-right: 10px;
     width: 10px;
     height: 10px;
   }
-}
-.menu__item a > span {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translate(-50%, 50%);
-  padding: 20px 20px;
-  width: calc(100% - 30px);
-  text-align: center;
 }
 @media (max-width: 991px) {
   .menu__item a > span {

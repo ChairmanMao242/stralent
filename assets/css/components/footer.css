@@ -3,7 +3,7 @@
 .footer {
   background-color: #023f5c;
   position: relative;
-  padding: 60px 40px;
+  padding: 60px 40px 20px;
 }
 @media (max-width: 991px) {
   .footer {
@@ -109,7 +109,7 @@
 .footer__menu {
   display: flex;
   gap: 20px;
-  margin: 30px auto;
+  margin: 20px auto 50px;
   justify-content: center;
 }
 @media (max-width: 767px) {

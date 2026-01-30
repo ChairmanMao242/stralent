@@ -56,6 +56,11 @@
     font-size: 30px;
   }
 }
+@media (max-width: 479px) {
+  .blog-list--related .blog-list__title--big {
+    font-size: 28px;
+  }
+}
 .blog-list__container {
   width: 2000px;
   max-width: 100%;
@@ -92,6 +97,11 @@
 @media (max-width: 991px) {
   .blog-list__grid {
     gap: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .blog-single .blog-list__grid {
+    margin-top: 20px;
   }
 }
 .blog-list__item {

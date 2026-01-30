@@ -27,6 +27,10 @@
 
         .blog-list__title--big {
             @include mixins.title();
+
+            @media (max-width: 479px) {
+                font-size: 28px;
+            }
         }
     }
 
@@ -49,6 +53,11 @@
 
         @media (max-width: 991px) {
             gap: 20px;
+        }
+        @media (max-width: 767px) {
+            .blog-single & {
+                margin-top: 20px;
+            }
         }
     }
 
