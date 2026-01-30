@@ -7,10 +7,10 @@
     overflow: hidden;
 
     &--blog-single {
+        padding-top: 0;
         padding-bottom: 50px;
 
         @media (max-width: 1199px) {
-            padding-top: 100px;
         }
     }
 
@@ -25,6 +25,7 @@
             padding-top: 30px;
         }
     }
+
     &--blog-intro {
         .section {
             &__cta {
@@ -75,7 +76,9 @@
         margin: 50px auto;
 
         @media (max-width: 1399px) {
-            margin-top: -50px;
+            .blog--archive & {
+                margin-top: -50px;
+            }
         }
 
         @media (max-width: 991px) {
@@ -238,7 +241,9 @@
     &__content {
         width: calc(50% + 10px);
         overflow: hidden;
-        margin-top: -130px;
+        .blog--archive & {
+            margin-top: -130px;
+        }
         padding-right: 50px;
 
         .blog-single & {
@@ -257,7 +262,7 @@
             }
         }
 
-        .blog & {
+        .blog--archive  & {
             padding-top: 40px;
             text-align: left;
 
@@ -277,7 +282,16 @@
             width: calc(100% + 80px);
             position: absolute;
             right: 35px;
-            top: -90px;
+
+            .blog--archive & {
+                top: -90px;
+            }
+
+            .blog-single & {
+                max-height: 100%;
+                aspect-ratio: 1 / 1;
+                max-width: 100%;
+            }
 
             @media (max-width: 1399px) {
                 width: 100%;
@@ -349,7 +363,7 @@
                 top: 40px;
             }
 
-            .blog & {
+            .blog--archive & {
                 top: -20px;
                 position: relative;
 
