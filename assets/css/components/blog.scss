@@ -8,7 +8,6 @@
         @include mixins.container(2000px);
     }
 
-
     &__title {
         @include mixins.title();
         margin: 70px auto;
@@ -162,6 +161,7 @@
         left: auto;
         z-index: 9;
         transform: translateY(50%);
+        position: relative;
 
         @media (max-width: 1199px) {
             right: 20px;
