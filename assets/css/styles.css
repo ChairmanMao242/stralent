@@ -2528,6 +2528,10 @@ table {
 .blog-list__title {
   text-align: left;
   margin-bottom: 20px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 .blog-list__excerpt, .blog-list__date {
   font-size: 30px;
@@ -2555,6 +2559,10 @@ table {
 }
 .blog-list__excerpt {
   margin-bottom: 30px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 .blog-list__link {
   background-color: #023f5c;

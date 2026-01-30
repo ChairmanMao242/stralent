@@ -252,7 +252,6 @@
 
     &__title {
         @include mixins.title(white);
-
         text-align: left;
         margin-bottom: 25px;
 
