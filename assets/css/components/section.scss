@@ -160,6 +160,10 @@
             border-radius: 20px;
         }
 
+        @media (max-width: 430px) {
+            margin-top: 35dvw;
+        }
+
         &:after {
             content: "";
             display: block;

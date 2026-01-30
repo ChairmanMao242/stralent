@@ -182,6 +182,11 @@
     border-radius: 20px;
   }
 }
+@media (max-width: 430px) {
+  .section__box {
+    margin-top: 35dvw;
+  }
+}
 .section__box:after {
   content: "";
   display: block;
