@@ -1,71 +1,9 @@
 @use "mixins";
 
 .header {
-  position: relative;
-  background-image: url(./../img/bg/bg-header-inner.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: bottom center;
-  height: auto;
-  aspect-ratio: 1920 / 600;
-  max-height: 700px;
-  margin: 0 auto;
-  min-width: 100%;
-  overflow-x: clip;
-
-  .blog-single & {
-    height: 350px;
-  }
-
-  @media (max-width: 1799px) {
-    aspect-ratio: auto;
-    height: 480px;
-
-    .blog-single & {
-      height: 310px;
-    }
-  }
-
-  @media (max-width: 1399px) {
-    .blog-single & {
-      height: 220px;
-    }
-  }
-
-  @media (max-width: 991px) {
-    aspect-ratio: auto;
-    height: 390px;
-    .blog-single & {
-      height: 190px;
-    }
-  }
-
-  .home & {
-    background-image: url(./../img/hero-homepage.jpg);
-    aspect-ratio: 1920 / 1165;
-    height: auto;
-    max-height: 100svh;
-  }
-
-  @media (max-width: 767px) {
-    aspect-ratio: auto;
-    background-size: cover;
-
-    .home & {
-      height: 420px;
-      aspect-ratio: auto;
-    }
-    .blog-single & {
-      height: 130px;
-    }
-  }
-
-  @media (max-width: 479px) {
-    .home & {
-      background-position: top 0px left -270px;
-      background-size: auto calc(100% + 20px);
-    }
-  }
+  position: absolute;
+  z-index: 99;
+  inset: 0;
 
   &__logo {
     position: absolute;
@@ -142,7 +80,7 @@
   }
 
   &__btn {
-    z-index: 99;
+    z-index: 100;
     appearance: none;
     -webkit-appearance: none;
     background-color: #ff990e;
@@ -239,6 +177,74 @@
         width: 25px;
         height: 25px;
       }
+    }
+  }
+}
+
+.hero {
+  position: relative;
+  background-image: url(./../img/bg/bg-header-inner.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  height: auto;
+  aspect-ratio: 1920 / 600;
+  max-height: 700px;
+  margin: 0 auto;
+  min-width: 100%;
+  overflow-x: clip;
+
+  .blog-single & {
+    height: 350px;
+  }
+
+  @media (max-width: 1799px) {
+    aspect-ratio: auto;
+    height: 480px;
+
+    .blog-single & {
+      height: 310px;
+    }
+  }
+
+  @media (max-width: 1399px) {
+    .blog-single & {
+      height: 220px;
+    }
+  }
+
+  @media (max-width: 991px) {
+    aspect-ratio: auto;
+    height: 390px;
+    .blog-single & {
+      height: 190px;
+    }
+  }
+
+  .home & {
+    background-image: url(./../img/hero-homepage.jpg);
+    aspect-ratio: 1920 / 1165;
+    height: auto;
+    max-height: 100svh;
+  }
+
+  @media (max-width: 767px) {
+    aspect-ratio: auto;
+    background-size: cover;
+
+    .home & {
+      height: 420px;
+      aspect-ratio: auto;
+    }
+    .blog-single & {
+      height: 130px;
+    }
+  }
+
+  @media (max-width: 479px) {
+    .home & {
+      background-position: top 0px left -270px;
+      background-size: auto calc(100% + 20px);
     }
   }
 
@@ -414,11 +420,10 @@
     }
   }
 }
-
 .menu--opened #header-menu {
   height: 100dvh;
   overflow: auto;
-  position: absolute;
+  position: fixed;
   inset: 0;
   max-width: 100%;
   overflow: clip;
@@ -439,7 +444,7 @@
   top: 0;
   margin-right: -100vw;
   opacity: 0;
-  transition: 0.3s ease-in-out;
+  transition: 0.3s opacity ease-in-out;
 
   @media (max-width: 1799px) {
     right: 130px;
@@ -658,7 +663,6 @@
 
 .menu--opened {
   overflow: hidden;
-
   .menu {
     margin-right: 0;
     opacity: 1;
@@ -692,4 +696,56 @@
 
 .header__linkedin {
   display: none !important;
+}
+
+.menu-wrap {
+  height: 180px;
+
+  &--sticky {
+    transition: top 0.3s ease-in-out;
+    top: -100px;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+    background: rgba(2, 63, 92, 0.65); /* transparent white */
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px); /* Safari support */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    position: fixed;
+    z-index: 9;
+    padding: 20px;
+
+    @media (max-width: 767px) {
+      height: 70px;
+    }
+
+    .header {
+      &__logo {
+        position: relative;
+        top: auto;
+        left: auto;
+
+        img {
+          width: 180px;
+
+          @media (max-width: 767px) {
+            width: 150px;
+          }
+        }
+      }
+      &__menu {
+        position: relative;
+        top: auto;
+        right: auto;
+      }
+    }
+  }
+
+  &--sticky.menu-wrap--visible {
+    top: 0;
+  }
 }

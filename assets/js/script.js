@@ -32,10 +32,12 @@ fetch('./template-parts/header-menu.html')
     .then(response => response.text())
     .then(html => {
         document.getElementById('header-menu').innerHTML = html;
-
+        const menuWrap = document.querySelector('.menu-wrap');
         // on click on #j-menu-btn toggle class menu--opened on body
         document.getElementById('j-menu-btn').addEventListener('click', () => {
             document.body.classList.toggle('menu--opened');
+            menuWrap.classList.remove('menu-wrap--sticky');
+            menuWrap.classList.remove('menu-wrap--visible');
         });
     });
 // Load footer template
@@ -231,3 +233,34 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+// Sticky menu scroll detection
+let lastScrollTop = 0;
+const menuWrap = document.querySelector('.menu-wrap');
+
+if (menuWrap) {
+    const menuHeight = menuWrap.offsetHeight;
+    console.log(menuHeight)
+
+    window.addEventListener('scroll', () => {
+        let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+        if (currentScroll > menuHeight) {
+            // Menu is not visible anymore - activate sticky behavior
+            if (currentScroll > lastScrollTop) {
+                // Scrolling DOWN - hide menu
+                menuWrap.classList.add('menu-wrap--sticky');
+                menuWrap.classList.remove('menu-wrap--visible');
+            } else {
+                // Scrolling UP - show menu
+                menuWrap.classList.add('menu-wrap--sticky');
+                menuWrap.classList.add('menu-wrap--visible');
+            }
+        } else {
+            // At top of page - remove sticky behavior
+            menuWrap.classList.remove('menu-wrap--sticky');
+            menuWrap.classList.remove('menu-wrap--visible');
+        }
+
+        lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // For Mobile or negative scrolling
+    });
+}
